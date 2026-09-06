@@ -1,0 +1,33 @@
+# four-step-card-flow
+
+**Category:** Flow & steps  ·  **Use case:** Hybrid
+
+## What it is
+Four steps, each with an image placeholder, a label and a caption.
+
+## Reference content (swap in your own)
+- **Kicker / label:** Project flow
+- **Title (action title):** Four stages, with visuals
+- **In the body:** STEP 1, Research, Interviews, data, scope., STEP 2, Prototype, Draft, test, iterate., STEP 3, Build, Develop and QA., STEP 4, Launch, Roll out, measure.
+
+## Prompt — build this slide
+```text
+Using the attached slide_template.md (my design system) and this layout recipe,
+create one 16:9 slide.
+
+Layout — four-step-card-flow: four steps, each with an image placeholder, a label and a caption.
+Title is an action title (a full sentence stating the point). Keep one accent
+color; everything else neutral gray. Colors, fonts and spacing come from
+slide_template.md — do not restyle the layout.
+
+Content:
+- Kicker: Project flow
+- Title: Four stages, with visuals
+- Body: STEP 1, Research, Interviews, data, scope., STEP 2, Prototype, Draft, test, iterate., STEP 3, Build, Develop and QA., STEP 4, Launch, Roll out, measure.
+
+Write the slide in <language>. Output one slide only.
+```
+
+## Notes
+- **Hybrid** — Works both projected and as a read-alone handout.
+- Pair with your `slide_template.md`. Replace `<language>` with your language.

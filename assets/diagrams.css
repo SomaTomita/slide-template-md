@@ -1,0 +1,99 @@
+/* diagrams.css — the shared "how it works" picture language used on the home,
+   how-to, and patterns pages. One vocabulary everywhere:
+     blue  = something YOU bring (logo, colors, screenshot, your slide_template.md)
+     gray  = something THIS SITE gives you (patterns, rules, shells)
+     ink   = what the AI hands back (the finished slide)
+   Everything is plain HTML + inline SVG: no images, no fonts, no scripts. */
+:root{--dg-blue:#0066cc;--dg-blue-soft:#EAF2FC;--dg-blue-line:#BFD6F0;}
+
+/* Every diagram lives inside a .dgm wrapper; all rules are scoped to it so slide
+   component classes in patterns.css (.chip, .bar, .row, .n ...) and these never collide. */
+/* ---- file / thing chips ---- */
+.dgm .chip{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12px;line-height:1;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 11px;white-space:normal;max-width:100%;overflow-wrap:anywhere;line-height:1.25;}
+.dgm .chip svg{width:14px;height:14px;flex:none;color:var(--taupe);}
+.dgm .chip.yours{border-color:var(--dg-blue-line);background:var(--dg-blue-soft);color:var(--dg-blue);}
+.dgm .chip.yours svg{color:var(--dg-blue);}
+.dgm .chip.out{background:var(--ink);border-color:var(--ink);color:#fff;}
+.dgm .chip.out svg{color:#fff;}
+.dgm .chip .sw{display:inline-flex;gap:2px;}
+.dgm .chip .sw i{width:9px;height:9px;border-radius:2px;display:block;border:1px solid rgba(0,0,0,.08);}
+
+/* ---- arrows / connectors ---- */
+.dgm .arr{display:flex;align-items:center;justify-content:center;color:var(--taupe);flex:none;}
+.dgm .arr svg{width:22px;height:22px;}
+.dgm .arr.down svg{transform:rotate(90deg);}
+.dgm .arr .lbl{font-size:11.5px;color:var(--body);margin-left:6px;}
+
+/* ---- a sequence of tiles connected by arrows; stacks on small screens ---- */
+.dgm.seqflow{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;}
+.dgm.seqflow>.tile{flex:1 1 auto;min-width:0;}
+.dgm .tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+.dgm .tile.yours{background:var(--dg-blue-soft);border-color:var(--dg-blue-line);}
+.dgm .tile.ai{background:var(--ink);color:#fff;border-color:var(--ink);text-align:center;}
+.dgm .tile.ai small{display:block;color:rgba(255,255,255,.7);font-size:12px;margin-top:5px;}
+.dgm .tile .tl{display:block;font-size:11.5px;font-weight:600;letter-spacing:.02em;color:var(--body);margin-bottom:9px;}
+.dgm .tile.yours .tl{color:var(--dg-blue);}
+.dgm .tile .chips{display:flex;flex-wrap:wrap;gap:6px;}
+.dgm .tile .chip{max-width:100%;white-space:normal;word-break:break-word;line-height:1.25;}
+.dgm .tile .th{font-weight:650;font-size:15px;letter-spacing:-.01em;}
+.dgm .tile .td{font-size:12.5px;color:var(--body);margin-top:3px;line-height:1.45;}
+@media(max-width:720px){
+  .dgm.seqflow{flex-direction:column;align-items:stretch;}
+  .dgm.seqflow>.arr svg{transform:rotate(90deg);}
+  .dgm.seqflow>.arr .lbl{display:none;}
+}
+
+/* ---- "attach these to the chat" mock ---- */
+.dgm.attach{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;margin:0 0 12px;}
+.dgm.attach .bar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--body);}
+.dgm.attach .bar i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block;}
+.dgm.attach .row{display:flex;flex-wrap:wrap;gap:8px;padding:14px 14px 4px;}
+.dgm.attach .row .lab{width:100%;font-size:11.5px;color:var(--body);font-weight:600;margin-bottom:-2px;}
+.dgm.attach .prompt{margin:10px 14px 14px;border:1px dashed var(--dg-blue-line);border-radius:9px;padding:10px 12px;font-size:12.5px;color:var(--dg-blue);background:var(--dg-blue-soft);display:flex;align-items:center;gap:8px;}
+.dgm.attach .prompt svg{width:14px;height:14px;flex:none;}
+
+/* ---- inline svg diagrams (route map, anatomy) ---- */
+.dgm.dgwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.dgm.dgwrap .dg{min-width:640px;}
+.dgm .dg{width:100%;height:auto;display:block;font-family:var(--sans);}
+.dgm .dg .t{font-size:13px;fill:var(--ink);}
+.dgm .dg .s{font-size:11.5px;fill:var(--body);}
+.dgm .dg .m{font-family:var(--mono);font-size:11.5px;fill:var(--ink);}
+.dgm .dg .b{fill:var(--dg-blue);}
+.dgm .dg .box{fill:var(--card);stroke:var(--line);}
+.dgm .dg .box.yours{fill:var(--dg-blue-soft);stroke:var(--dg-blue-line);}
+.dgm .dg .ln{stroke:var(--taupe);fill:none;stroke-width:1.4;}
+.dgm .dg .ln.b{stroke:var(--dg-blue);}
+.dgm .dg .call{fill:var(--dg-blue);}
+.dgm .dg .callt{fill:#fff;font-size:11px;font-weight:700;text-anchor:middle;dominant-baseline:central;}
+.dgm .dgcap{font-size:12.5px;color:var(--body);margin:10px 0 0;text-align:center;}
+
+/* ---- two-lane "where to paste it" ---- */
+.dgm.lanes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:720px){.lanes{grid-template-columns:1fr;}}
+.dgm .lane{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 18px 18px;}
+.dgm .lane .lh{font-weight:650;font-size:15px;letter-spacing:-.01em;margin:0 0 3px;}
+.dgm .lane .ld{font-size:12.5px;color:var(--body);margin:0 0 14px;line-height:1.45;}
+.dgm .lane ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+.dgm .lane li{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;}
+.dgm .lane li .tool{font-weight:600;color:var(--ink);}
+.dgm .lane li .chips{display:flex;gap:5px;flex-wrap:wrap;min-width:0;max-width:100%;}
+.dgm .lane li .chips .chip{padding:5px 8px;font-size:11px;}
+
+/* ---- anatomy figure: slide mock + legend ---- */
+.dgm.anat{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;align-items:center;}
+@media(max-width:720px){.anat{grid-template-columns:1fr;}}
+.dgm.anat ol{list-style:none;margin:0;padding:0;display:grid;gap:9px;}
+.dgm.anat li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--body);line-height:1.4;}
+.dgm.anat li b{color:var(--ink);}
+.dgm.anat li .n{flex:none;width:20px;height:20px;border-radius:50%;background:var(--dg-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+
+/* ---- three ways (patterns page) ---- */
+.dgm.ways3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0 14px;}
+@media(max-width:640px){.ways3{grid-template-columns:1fr;}}
+.dgm .way{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:14px 14px 13px;display:flex;gap:12px;align-items:flex-start;min-width:0;}
+.dgm .way>div{min-width:0;}
+.dgm .way svg{width:44px;height:36px;flex:none;}
+.dgm .way .wh{font-weight:650;font-size:14px;color:var(--ink);margin:0 0 3px;}
+.dgm .way .wd{font-size:12.5px;color:var(--body);margin:0;line-height:1.45;}
+.dgm .way .wd code{font-family:var(--mono);font-size:.9em;overflow-wrap:anywhere;}

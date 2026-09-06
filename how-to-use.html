@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use · slide_template.md</title>
+<meta name="description" content="Turn your logo, a reference design, or your website into one slide_template.md — then reuse it for every slide. Copy-paste prompts for Claude and Gemini included.">
+<meta name="theme-color" content="#0066cc">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="slide_template.md">
+<meta property="og:title" content="How to use · slide_template.md">
+<meta property="og:description" content="Build one slide_template.md design system from your brand, then reuse it for every slide. Copy-paste prompts included.">
+<meta property="og:url" content="https://somatomita.github.io/slide-template-md/how-to-use.html">
+<meta property="og:image" content="https://somatomita.github.io/slide-template-md/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="slide_template.md — design once, then build slide by slide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to use · slide_template.md">
+<meta name="twitter:description" content="Build one slide_template.md from your brand, then reuse it for every slide. Copy-paste prompts included.">
+<meta name="twitter:image" content="https://somatomita.github.io/slide-template-md/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📑%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/diagrams.css">
+<link rel="stylesheet" href="assets/how-to.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site-nav">
+    <div class="brand"><a href="index.html">slide_template<b>.md</b></a></div>
+    <nav><a href="how-to-use.html" class="cur">How to use</a><a href="patterns.html">Patterns</a><a href="examples.html">Examples</a></nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Step 1 · Set up your design system</p>
+    <h1>Build one slide_template.md.<br>Reuse it for every slide.</h1>
+    <p>Your design system is a single <code class="inl">slide_template.md</code> — colors, fonts, spacing, logo rules. You make it once (from your logo, a reference design, or your own website), then hand it to your AI with each pattern. Below are the reference sources, copy-paste prompts to generate it, and where to paste everything.</p>
+    <div class="note" style="margin-top:14px"><b>In a hurry?</b> Skip this and <a href="examples.html#mix">start from one of ten ready-made systems, or mix your own →</a> — download it, hand it to your AI with <code class="inl">ALL-PATTERNS.md</code>, and you're making slides in about two minutes. Build your own (below) when you want it on-brand.</div>
+  </section>
+
+  <section class="block">
+    <h2 class="h">Three ways in, one file out</h2>
+    <p class="lead">Pick the source you already have. Whichever you choose, the AI turns it into the same <code class="inl">slide_template.md</code>, and that one file then styles every slide.</p>
+    <div class="dgwrap dgm"><svg class="dg" viewBox="0 0 880 262" role="img" aria-label="Three sources, your logo and colors, a ready-made design from getdesign.md, or a screenshot of your website, all become one slide_template.md, which then styles every slide.">
+      <a href="#route-a"><rect class="box yours" x="8" y="12" width="250" height="62" rx="12"/>
+        <rect x="26" y="30" width="26" height="26" rx="5" fill="#0066cc"/><rect x="58" y="30" width="10" height="10" rx="2" fill="#232321"/><rect x="58" y="46" width="10" height="10" rx="2" fill="#9C9C97"/>
+        <text class="t" x="82" y="38" font-weight="650">Your logo + brand colors</text><text class="s" x="82" y="58">Route A · simplest, start here</text></a>
+      <a href="#route-b"><rect class="box yours" x="8" y="100" width="250" height="62" rx="12"/>
+        <path d="M30 118h18l10 10v22a3 3 0 0 1-3 3H30a3 3 0 0 1-3-3v-29a3 3 0 0 1 3-3z" fill="#fff" stroke="#0066cc" stroke-width="1.6"/><path d="M33 137h16M33 144h16" stroke="#0066cc" stroke-width="1.6"/>
+        <text class="t" x="82" y="126" font-weight="650">A ready-made design</text><text class="s" x="82" y="146">Route B · from getdesign.md</text></a>
+      <a href="#route-c"><rect class="box yours" x="8" y="188" width="250" height="62" rx="12"/>
+        <rect x="26" y="206" width="36" height="28" rx="4" fill="#fff" stroke="#0066cc" stroke-width="1.6"/><path d="M26 214h36" stroke="#0066cc" stroke-width="1.6"/><rect x="31" y="219" width="14" height="9" fill="#BFD6F0"/><rect x="48" y="219" width="9" height="3" fill="#BFD6F0"/><rect x="48" y="225" width="9" height="3" fill="#BFD6F0"/>
+        <text class="t" x="82" y="214" font-weight="650">A screenshot of your website</text><text class="s" x="82" y="234">Route C · needs a Chrome extension</text></a>
+      <path class="ln" d="M258 43c60 0 60 88 120 88M258 131h120M258 219c60 0 60-88 120-88"/>
+      <path class="ln" d="M372 125l7 6-7 6"/>
+      <rect class="box yours" x="390" y="96" width="220" height="70" rx="14" stroke-width="1.6"/>
+      <path d="M414 114h16l8 8v22a3 3 0 0 1-3 3h-21a3 3 0 0 1-3-3v-27a3 3 0 0 1 3-3z" fill="#fff" stroke="#0066cc" stroke-width="1.6"/><path d="M417 133h14M417 139h14M417 145h9" stroke="#0066cc" stroke-width="1.6"/>
+      <text class="m b" x="452" y="127" font-weight="700">slide_template.md</text><text class="s" x="452" y="147">colors · fonts · spacing · logo</text>
+      <path class="ln" d="M610 131h60"/><path class="ln" d="M664 125l7 6-7 6"/>
+      <g>
+        <rect class="box" x="690" y="42" width="120" height="68" rx="6" transform="rotate(-6 750 76)"/>
+        <rect class="box" x="705" y="86" width="120" height="68" rx="6" transform="rotate(4 765 120)"/>
+        <rect x="720" y="128" width="130" height="73" rx="6" fill="#fff" stroke="#0066cc" stroke-width="1.6"/>
+        <rect x="732" y="140" width="46" height="5" rx="2" fill="#0066cc"/><rect x="732" y="152" width="92" height="7" rx="2" fill="#232321"/><rect x="732" y="166" width="70" height="4" rx="2" fill="#DBDBD7"/><rect x="732" y="174" width="82" height="4" rx="2" fill="#DBDBD7"/><rect x="732" y="182" width="56" height="4" rx="2" fill="#DBDBD7"/><rect x="826" y="138" width="16" height="7" rx="2" fill="#0066cc"/>
+      </g>
+      <text class="s" x="785" y="228" text-anchor="middle">every slide, same look</text>
+    </svg></div>
+    <p class="dgcap">Design galleries (Dribbble, Land-book, Godly) work too: screenshot a look you like and treat it as Route C.</p>
+  </section>
+
+  <section class="block" id="route-a">
+    <h2 class="h">Route A — Simplest: your logo + colors</h2>
+    <p class="lead">The fastest start, no extra tools. Attach your logo, list your brand colors, and let the AI fill in the template. <b>Start here if you're not sure.</b></p>
+<div class="attach dgm" role="img" aria-label="What to attach to the chat: From this site (Copy or Download in “The files” below): slide_template.md, SLIDE-DESIGN-RULES.md; From you: logo.png">
+      <div class="bar"><i></i><i></i><i></i>New chat · Claude or Gemini</div>
+      <div class="row"><span class="lab">From this site (Copy or Download in “The files” below)</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>SLIDE-DESIGN-RULES.md</span></div>
+      <div class="row"><span class="lab">From you</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>logo.png</span></div>
+      <div class="prompt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Then paste the prompt below and fill in your colors</div>
+    </div>
+    <details class="cbwrap">
+      <summary class="cbbar"><span class="cbtitle">Copy-paste prompt</span><button class="copy" type="button">Copy</button></summary>
+      <pre class="cb">Using the attached slide_template.md (template) and SLIDE-DESIGN-RULES.md,
+create a filled-in slide_template.md for MY brand.
+
+My brand:
+- Colors: &lt;list your #HEX codes, or "sample them from the attached logo"&gt;
+- Logo:   &lt;attached; top-right every slide; never distort/recolor; keep transparency&gt;
+- Fonts:  &lt;name them, or "pick a tasteful pairing that fits my brand"&gt;
+- Mode:   &lt;present (slides you talk over) | document (slides people read)&gt;
+
+Rules: keep 60-30-10, easy-to-read body text, max 2 fonts, 8px spacing, 16:9.
+Replace every {{...}} with concrete values. Don't over-decorate.
+Output only the finished slide_template.md (markdown).</pre>
+    </details>
+  </section>
+
+  <section class="block" id="route-b">
+    <details class="disc">
+    <summary class="dischead"><span class="st">Route B — From a ready-made design</span><span class="sub">Alternative · start from a pre-made look on getdesign.md, then fold it into your template.</span></summary>
+    <div class="discbody">
+    <p class="lead">A bit more polished — start from a pre-made look on <b>getdesign.md</b>, then ask the AI to fold it into your slide_template.md.</p>
+<div class="attach dgm" role="img" aria-label="What to attach to the chat: From this site: slide_template.md, SLIDE-DESIGN-RULES.md; From you: the design you copied from getdesign.md, pasted first, logo.png (optional)">
+      <div class="bar"><i></i><i></i><i></i>New chat · Claude or Gemini</div>
+      <div class="row"><span class="lab">From this site</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>SLIDE-DESIGN-RULES.md</span></div>
+      <div class="row"><span class="lab">From you</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>the design you copied from getdesign.md, pasted first</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>logo.png (optional)</span></div>
+      <div class="prompt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Then paste the prompt below, underneath the design</div>
+    </div>
+    <p class="lead" style="margin-top:0">Get the design at <a href="https://getdesign.md/" target="_blank" rel="noopener">getdesign.md</a>: open one you like and copy its markdown.</p>
+    <details class="cbwrap">
+      <summary class="cbbar"><span class="cbtitle">Copy-paste prompt</span><button class="copy" type="button">Copy</button></summary>
+      <pre class="cb"><span class="c"># Paste the getdesign.md design above this prompt, then:</span>
+
+I'm building a design system to generate 16:9 slides with an AI.
+Above is a base design system I pasted from getdesign.md. I'm also
+attaching slide_template.md (a template) and SLIDE-DESIGN-RULES.md (the rules).
+
+Produce a single, filled-in slide_template.md for MY brand: adapt the base design
+above into the slide_template.md template, and follow SLIDE-DESIGN-RULES.md.
+
+My brand:
+- Colors: &lt;list #HEX, or "sample from the attached logo / screenshot"&gt;
+- Logo:   &lt;attached; top-right every slide; never distort/recolor; keep transparency&gt;
+- Fonts:  &lt;name them, or "pick a tasteful pairing that fits the reference"&gt;
+- Mode:   &lt;present | document&gt;     Tone: &lt;conservative | balanced | stylish&gt;
+
+Rules: keep 60-30-10, WCAG AA (body contrast >= 4.5:1), max 2 fonts,
+8px spacing, 16:9. Replace every {{...}} with concrete values. Don't
+over-decorate. Output only the finished slide_template.md (markdown).</pre>
+    </details>
+    </div>
+    </details>
+  </section>
+
+  <section class="block" id="route-c">
+    <details class="disc">
+    <summary class="dischead"><span class="st">Route C — From a website screenshot</span><span class="sub">Advanced · match an existing site. Needs the free GoFullPage Chrome extension.</span></summary>
+    <div class="discbody">
+    <p class="lead">When you want your slides to match an existing website (usually your own). <b>Needs the free GoFullPage Chrome extension.</b> The screenshot is the visual reference; slide_template.md is the structure to fill in.</p>
+<div class="attach dgm" role="img" aria-label="What to attach to the chat: From this site: slide_template.md, SLIDE-DESIGN-RULES.md; From you: screenshot.png">
+      <div class="bar"><i></i><i></i><i></i>New chat · Claude or Gemini</div>
+      <div class="row"><span class="lab">From this site</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>SLIDE-DESIGN-RULES.md</span></div>
+      <div class="row"><span class="lab">From you</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>screenshot.png</span></div>
+      <div class="prompt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Then paste the prompt below</div>
+    </div>
+    <p class="lead" style="margin-top:0">To make the screenshot: install the free <b>GoFullPage</b> Chrome extension, open your site, click its icon, choose <b>Download as PNG</b>, and rename the file <code class="inl">screenshot.png</code>. It captures the whole page, header to footer.</p>
+    <details class="cbwrap">
+      <summary class="cbbar"><span class="cbtitle">Copy-paste prompt</span><button class="copy" type="button">Copy</button></summary>
+      <pre class="cb">I'm attaching:
+1) slide_template.md — a design-system template (the structure to fill in).
+2) screenshot.png — a full-page screenshot of my website (GoFullPage).
+3) SLIDE-DESIGN-RULES.md — the rules to follow.
+
+Fill in slide_template.md so it reflects the look-and-feel of screenshot.png.
+Keep the template's structure, but set the following from what you see:
+
+- Brand colors (with hex codes) — sample directly from the image.
+- Typography (font families, sizes, weights, headings vs body).
+- Spacing rhythm (margins, gutters, line-height).
+- Logo treatment (size, placement, padding).
+- Header / footer layout patterns.
+- Recurring components (cards, KPI blocks, comparison sections).
+
+Follow SLIDE-DESIGN-RULES.md: 60-30-10, WCAG AA body >= 4.5:1, max 2
+fonts, 8px spacing, 16:9. Output only the finished slide_template.md (markdown).</pre>
+    </details>
+    <div class="note"><b>Off color?</b> Reply: “The screenshot shows a teal-ish primary color near the nav. Sample it more precisely and update the primary hex.”</div>
+    </div>
+    </details>
+  </section>
+
+  <section class="block">
+    <details class="disc">
+    <summary class="dischead"><span class="st">Check the slide_template.md it returns</span><span class="sub">Reference · six things to verify before you rely on it.</span></summary>
+    <div class="discbody">
+    <div class="anat dgm">
+      <svg class="dg" viewBox="0 0 500 300" role="img" aria-label="A sample slide with six numbered callouts: colors, fonts, presenting or reading mode, fixed positions for logo, title and page number, chart rules, and readable body text.">
+        <rect x="10" y="14" width="480" height="270" rx="6" fill="#fff" stroke="#DBDBD7"/>
+        <rect x="10" y="14" width="480" height="6" fill="#0066cc"/>
+        <rect x="424" y="34" width="52" height="18" rx="3" fill="#EAF2FC" stroke="#BFD6F0"/><text class="s" x="450" y="47" text-anchor="middle" style="font-size:9px;fill:#0066cc;font-weight:700">LOGO</text>
+        <text x="34" y="48" style="font-size:9px;letter-spacing:.2em;fill:#9C9C97;font-weight:600">QUARTERLY RESULTS</text>
+        <text x="34" y="78" style="font-family:Georgia,serif;font-size:19px;fill:#232321">Revenue grew 38% on new accounts</text>
+        <rect x="34" y="104" width="190" height="6" rx="3" fill="#4f4f4b"/><rect x="34" y="118" width="210" height="6" rx="3" fill="#4f4f4b"/><rect x="34" y="132" width="170" height="6" rx="3" fill="#4f4f4b"/><rect x="34" y="146" width="200" height="6" rx="3" fill="#4f4f4b"/><rect x="34" y="160" width="120" height="6" rx="3" fill="#4f4f4b"/>
+        <rect x="290" y="112" width="30" height="80" fill="#DBDBD7"/><rect x="332" y="96" width="30" height="96" fill="#DBDBD7"/><rect x="374" y="80" width="30" height="112" fill="#DBDBD7"/><rect x="416" y="56" width="30" height="136" fill="#0066cc"/><path d="M284 192h170" stroke="#9C9C97" stroke-width="1"/>
+        <text class="s" x="34" y="266" style="font-size:9px">Company Inc. · FY2026</text><text class="s" x="466" y="266" text-anchor="end" style="font-size:9px">12</text>
+        <g><circle class="call" cx="24" cy="12" r="9"/><text class="callt" x="24" y="12">1</text></g>
+        <g><circle class="call" cx="22" cy="74" r="9"/><text class="callt" x="22" y="74">2</text></g>
+        <g><circle class="call" cx="262" cy="150" r="9"/><text class="callt" x="262" y="150">3</text></g>
+        <g><circle class="call" cx="486" cy="34" r="9"/><text class="callt" x="486" y="34">4</text><circle class="call" cx="486" cy="264" r="9"/><text class="callt" x="486" y="264">4</text></g>
+        <g><circle class="call" cx="360" cy="212" r="9"/><text class="callt" x="360" y="212">5</text></g>
+        <g><circle class="call" cx="22" cy="176" r="9"/><text class="callt" x="22" y="176">6</text></g>
+      </svg>
+      <ol>
+        <li><span class="n">1</span><span><b>Real colors, with #hex.</b> A background, one accent, a text color. Not “blue-ish”.</span></li>
+        <li><span class="n">2</span><span><b>Two fonts at most.</b> One for titles, one for everything else.</span></li>
+        <li><span class="n">3</span><span><b>Says presenting or reading.</b> That decides how much text fits on a slide.</span></li>
+        <li><span class="n">4</span><span><b>Logo, title and page number</b> always sit in the same place.</span></li>
+        <li><span class="n">5</span><span><b>Rules for charts and diagrams.</b> Which color is the highlight, what stays gray.</span></li>
+        <li><span class="n">6</span><span><b>Body text you can read.</b> If it looks faint, reply: “Make the body text darker.”</span></li>
+      </ol>
+    </div>
+    <div class="note">Prefer a starting point? Ten sample systems live in <code class="inl">1-design-system/examples/</code>. The full generator prompt is <code class="inl">1-design-system/CREATE-YOUR-DESIGN.md</code>.</div>
+    </div>
+    </details>
+  </section>
+
+  <section class="block">
+    <details class="disc">
+    <summary class="dischead"><span class="st">Where to paste it</span><span class="sub">Reference · four tools — Claude Project, Gemini Gem, Claude Design, NotebookLM.</span></summary>
+    <div class="discbody">
+    <p class="lead">Two habits, both fine. Blue chips are yours; gray chips come from this site.</p>
+    <div class="lanes dgm">
+      <div class="lane">
+        <p class="lh">Set up once, then just ask</p>
+        <p class="ld">Upload your two files one time. After that, every message can be “a slide on &lt;topic&gt;”.</p>
+        <ul>
+          <li><span class="tool">Claude Project</span><span class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>ALL-PATTERNS.md</span></span></li>
+          <li><span class="tool">Gemini Gem</span><span class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>ALL-PATTERNS.md</span></span></li>
+          <li><span class="tool">NotebookLM</span><span class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>ALL-PATTERNS.md</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>your source material</span></span></li>
+        </ul>
+        <div class="note" style="margin-top:12px">Project or Gem instructions: “You are a slide generator. Obey slide_template.md; one 16:9 slide per message; one idea per slide.”</div>
+      </div>
+      <div class="lane">
+        <p class="lh">Paste per slide</p>
+        <p class="ld">Nothing to set up. Attach the design and one pattern each time. Best for visual, one-at-a-time work.</p>
+        <ul>
+          <li><span class="tool">Claude Design (claude.ai)</span><span class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>&lt;pattern-name&gt;.md</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>your content</span></span></li>
+          <li><span class="tool">Any Claude or Gemini chat</span><span class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>&lt;pattern-name&gt;.md</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>your content</span></span></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </details>
+  </section>
+
+  <section class="block">
+    <h2 class="h">Build one slide</h2>
+    <p class="lead">Grab a pattern from <a href="patterns.html">Patterns</a> (each card has Copy and Download), then:</p>
+    <div class="attach dgm" role="img" aria-label="What to attach to the chat: Attach: slide_template.md, &lt;pattern-name&gt;.md; Type: your points for this slide">
+      <div class="bar"><i></i><i></i><i></i>New chat · Claude or Gemini</div>
+      <div class="row"><span class="lab">Attach</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>slide_template.md</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>&lt;pattern-name&gt;.md</span></div>
+      <div class="row"><span class="lab">Type</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>your points for this slide</span></div>
+      <div class="prompt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Then paste the prompt below</div>
+    </div>
+    <details class="cbwrap">
+      <summary class="cbbar"><span class="cbtitle">Copy-paste prompt</span><button class="copy" type="button">Copy</button></summary>
+      <pre class="cb">Using the attached slide_template.md (design) and the layout recipe &lt;pattern-name&gt;.md,
+create one 16:9 slide.
+
+Topic / content: &lt;your points here&gt;
+
+Rules: slide_template.md is authoritative. One idea per slide. Title = a full
+sentence that states the point (an action title). Colors and fonts from
+slide_template.md only. Write the slides in &lt;language&gt;. Just one slide first.</pre>
+    </details>
+    <div class="note"><b>Language:</b> output works in any major language — just change <code class="inl">&lt;language&gt;</code> (English, 日本語, 한국어, हिन्दी, Deutsch, Français, Español…). <b>Refine</b> one line at a time: “Bring the title and subtitle closer.” · “Only fix this; leave the rest.” · “Page 1 = your output, Page 2 = my fix — match Page 2.”</div>
+  </section>
+
+  <section class="block" id="whole-deck">
+    <h2 class="h">Build a whole deck, then use it</h2>
+    <p class="lead">Once single slides look right, assemble them into one file you can present or share — no export tools.</p>
+    <div class="seqflow dgm" role="img" aria-label="Your finished slides plus the deck shell go to the AI, which returns one deck file. Open it to present, or print it to PDF." style="margin:0 0 18px">
+      <div class="tile yours"><span class="tl">Your slides</span><div class="chips"><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>slide 1</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>slide 2</span><span class="chip yours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg>…</span></div></div>
+      <div class="arr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      <div class="tile"><span class="tl">From this site</span><div class="chips"><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>SLIDE-DECK-shell.html</span></div><p class="td">One slide per section</p></div>
+      <div class="arr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      <div class="tile ai"><div class="th">One deck file</div><small>open it in a browser</small></div>
+      <div class="arr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      <div class="tile"><span class="tl">Then</span><div class="th" style="font-size:14px">Present · press P</div><div class="th" style="font-size:14px;margin-top:6px">Print → Save as PDF</div></div>
+    </div>
+    <ol class="steps2">
+      <li>Get <code class="inl">SLIDE-DECK-shell.html</code> (a print-ready, self-contained deck) from “The files” below.</li>
+      <li>Attach it with your <code class="inl">slide_template.md</code> and ask the AI to put one slide per <code class="inl">&lt;section class="slide"&gt;</code> — prompt in <code class="inl">EXPORT-YOUR-DECK.md</code>.</li>
+      <li>Open the file: <b>present</b> it (press P; &rarr; / Space / click; F = fullscreen), or <b>Print → Save as PDF</b> to share.</li>
+    </ol>
+    <p class="lead">Starting from a blank page? Grab a <a href="3-build-a-deck/blueprints/README.md">deck blueprint</a> — a ready-made storyline for a sales proposal, a company pitch, a quarterly report, or a research report — and fill in the content.</p>
+    <div class="note"><b>Printing to PDF?</b> Set <b>Landscape</b>, <b>Margins: None</b>, and turn <b>Background graphics ON</b> — without that last one, the colors print blank. All routes (present / PDF / PowerPoint) are in <code class="inl">EXPORT-YOUR-DECK.md</code>.</div>
+  </section>
+
+  <section class="block">
+    <h2 class="h">The files — copy or download</h2>
+    <p class="lead">No GitHub account needed. <b>Copy</b> puts a file's text on your clipboard — paste it straight into the chat. <b>Download</b> saves the <code class="inl">.md</code> so you can upload it into a Claude Project or Gemini Gem. <span style="color:var(--taupe)">(Copy and Download work on the live site; a page opened straight off your disk can't reach the files — publish it or run a local server first.)</span></p>
+    <ul class="files">
+      <li>
+        <span class="fmeta"><code class="inl">slide_template.md</code> — the template to fill in.</span>
+        <span class="facts"><button class="filebtn" data-file="1-design-system/slide_template.md">Copy</button><a class="filebtn dl" href="1-design-system/slide_template.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">SLIDE-DESIGN-RULES.md</code> — the rulebook.</span>
+        <span class="facts"><button class="filebtn" data-file="1-design-system/SLIDE-DESIGN-RULES.md">Copy</button><a class="filebtn dl" href="1-design-system/SLIDE-DESIGN-RULES.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">CREATE-YOUR-DESIGN.md</code> — the full generator prompt.</span>
+        <span class="facts"><button class="filebtn" data-file="1-design-system/CREATE-YOUR-DESIGN.md">Copy</button><a class="filebtn dl" href="1-design-system/CREATE-YOUR-DESIGN.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">BUILD-A-DECK.md</code> — build a whole deck.</span>
+        <span class="facts"><button class="filebtn" data-file="3-build-a-deck/BUILD-A-DECK.md">Copy</button><a class="filebtn dl" href="3-build-a-deck/BUILD-A-DECK.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">SLIDE-DECK-shell.html</code> — a print-ready deck to fill (present or PDF).</span>
+        <span class="facts"><button class="filebtn" data-file="3-build-a-deck/SLIDE-DECK-shell.html">Copy</button><a class="filebtn dl" href="3-build-a-deck/SLIDE-DECK-shell.html" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">EXPORT-YOUR-DECK.md</code> — assemble + present/share routes.</span>
+        <span class="facts"><button class="filebtn" data-file="3-build-a-deck/EXPORT-YOUR-DECK.md">Copy</button><a class="filebtn dl" href="3-build-a-deck/EXPORT-YOUR-DECK.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">blueprints/</code> — 4 ready-made deck storylines (sales proposal, pitch, quarterly report, research report).</span>
+        <span class="facts"><a class="filebtn" href="3-build-a-deck/blueprints/README.md">See &amp; copy them →</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">ALL-PATTERNS.md</code> — every layout in one file (upload once to a Project / Gem).</span>
+        <span class="facts"><button class="filebtn" data-file="2-patterns/ALL-PATTERNS.md">Copy</button><a class="filebtn dl" href="2-patterns/ALL-PATTERNS.md" download>Download</a></span>
+      </li>
+      <li>
+        <span class="fmeta"><code class="inl">examples/</code> — ten ready-made sample systems.</span>
+        <span class="facts"><a class="filebtn" href="examples.html#mix">See &amp; copy them →</a></span>
+      </li>
+    </ul>
+    <div class="note">Want patterns one at a time, or by category? Each card on the <a href="patterns.html">Patterns</a> page has its own <b>Copy</b> / <b>Download</b>, and per-category bundles live in <code class="inl">2-patterns/bundles/</code>.</div>
+  </section>
+
+  <footer>
+    <span>slide_template.md — build your design, then build slide by slide</span>
+    <span><a href="index.html">Home</a> · <a href="patterns.html">Patterns</a></span>
+  </footer>
+</div>
+<script src="assets/how-to.js" defer></script>
+</body>
+</html>

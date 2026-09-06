@@ -1,0 +1,34 @@
+name: CI
+
+# Quality gate for the static site. GitHub Pages deploys on its own (branch
+# serving); this only blocks broken commits from shipping.
+# Assumes this folder (slide-en) is the repository root.
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Links, structure, og image, and meta
+        run: python3 tools/check_site.py
+
+      - name: Pattern recipes are in sync with patterns.html
+        run: |
+          python3 tools/genpat.py
+          if ! git diff --quiet -- 2-patterns/; then
+            echo "::error::2-patterns/ is out of date. Run 'python3 tools/genpat.py' and commit the result."
+            git --no-pager diff --stat -- 2-patterns/
+            exit 1
+          fi

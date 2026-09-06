@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Source for assets/og.png (1200x630 social preview). Regenerate:
+     serve the site, then screenshot this page at 1200x630. See tools/README-og.txt -->
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --ink:#1c1c1a;--body:#4f4f4b;--taupe:#8f8f8a;--blue:#0066cc;--line:#d8d8d3;
+    --paper:#ececea;--card:#fbfbf9;
+    --serif:"Iowan Old Style","Palatino Linotype","Hoefler Text",Palatino,Georgia,serif;
+    --sans:system-ui,-apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  html,body{width:1200px;height:630px;}
+  body{background:var(--paper);font-family:var(--sans);color:var(--ink);overflow:hidden;}
+  .card{position:relative;width:1200px;height:630px;padding:74px 80px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
+  .card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--blue);}
+  .eyebrow{font-size:20px;letter-spacing:.30em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:26px;}
+  h1{font-family:var(--serif);font-weight:600;font-size:76px;line-height:.98;letter-spacing:-.03em;color:var(--ink);margin-bottom:30px;}
+  .tag{font-size:26px;color:var(--body);line-height:1.4;max-width:34ch;margin-bottom:44px;}
+  .brand{font-family:var(--sans);font-weight:700;font-size:30px;letter-spacing:-.01em;color:var(--ink);}
+  .brand b{color:var(--blue);}
+  /* mini mock slide on the right */
+  .mock{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.14);aspect-ratio:16/9;width:100%;transform:rotate(-2deg);padding:38px 40px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
+  .mock .deco{position:absolute;border-radius:50%;background:#eef3fb;z-index:0;}
+  .mock .kick,.mock h2,.mock p,.mock .ln{position:relative;z-index:1;}
+  .mock .kick{font-family:var(--mono);font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:14px;}
+  .mock h2{font-family:var(--serif);font-size:40px;line-height:1.02;letter-spacing:-.02em;color:var(--ink);}
+  .mock p{font-size:16px;color:var(--body);margin-top:12px;}
+  .mock .ln{height:5px;width:120px;background:var(--blue);border-radius:3px;margin-top:20px;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="eyebrow">English slide system</div>
+      <h1>Design once.<br>Then build,<br>slide by slide.</h1>
+      <p class="tag">100 grayscale layout patterns · drop in your brand's color · no code.</p>
+      <div class="brand">slide_template<b>.md</b></div>
+    </div>
+    <div class="right">
+      <div class="mock">
+        <span class="deco" style="width:170px;height:170px;top:-46px;right:-30px"></span>
+        <span class="deco" style="width:90px;height:90px;bottom:26px;left:40px"></span>
+        <div class="kick">Built with slide_template.md</div>
+        <h2>Your design,<br>your color.</h2>
+        <p>Grayscale structure, plus your brand.</p>
+        <div class="ln"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My deck — slide_template.md</title>
+<style>
+  /* =======================================================================
+     SLIDE-DECK-shell — a self-contained, print-ready deck. No build, no CDN.
+     HAND THIS WHOLE FILE TO CLAUDE / GEMINI:
+       1) Fill :root from your slide_template.md (colors + fonts).
+       2) Replace the two example <section class="slide"> with ONE per slide,
+          built from the pattern recipes in 2-patterns/. Keep each self-contained.
+       3) Leave the print rules and the <script> untouched.
+     THEN open it: press P to present (->/Space/click, F = fullscreen, Esc = exit),
+     or Print -> Save as PDF to share (see EXPORT-YOUR-DECK.md for settings).
+     ======================================================================= */
+  :root{
+    --paper:#F7F6F2; --paper-2:#ECEAE3; --card:#FFFFFF;
+    --ink:#1A1A1A; --body:#4A4A46; --muted:#8A8A84; --line:#DCDCD6;
+    --accent:#C2410C; --accent-soft:#F3E7DC;
+    --serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+    --sans:system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:var(--paper-2);}
+  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;}
+
+  /* one slide = a 16:9 page (1280x720) */
+  .slide{
+    position:relative;width:1280px;height:720px;overflow:hidden;
+    background:var(--paper);color:var(--ink);padding:64px 88px;
+    margin:24px auto;box-shadow:0 12px 34px rgba(0,0,0,.14);
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  .slide .kicker{font-family:var(--sans);font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+  .slide h1{font-family:var(--serif);font-weight:600;font-size:64px;line-height:1.05;letter-spacing:-.02em;margin-top:18px;}
+  .slide h2{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.1;margin-top:6px;}
+  .slide p{font-family:var(--sans);font-size:24px;line-height:1.5;color:var(--body);max-width:46ch;margin-top:16px;}
+  .slide .pagenum{position:absolute;right:44px;bottom:32px;font-family:var(--sans);font-size:16px;color:var(--muted);}
+  .kpirow{display:flex;gap:56px;margin-top:28px;}
+  .kpi .v{font-family:var(--serif);font-size:76px;font-weight:700;color:var(--accent);line-height:1;}
+  .kpi .l{font-family:var(--sans);font-size:20px;color:var(--body);margin-top:8px;}
+
+  /* print: exact one-slide-per-page, force backgrounds */
+  @page{size:1280px 720px;margin:0;}
+  @media print{
+    html,body{background:#fff;}
+    .slide{margin:0;box-shadow:none;page-break-after:always;break-after:page;}
+    .slide:last-child{page-break-after:auto;break-after:auto;}
+    .deck-hint{display:none !important;}
+  }
+
+  /* present mode (screen only) */
+  body.present{background:#0f0f10;overflow:hidden;}
+  body.present .deck-hint{color:#8A8A84;background:rgba(0,0,0,.4);border-top:0;}
+  body.present .slide{display:none;margin:0;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+  body.present .slide.current{display:block;position:fixed;left:50%;top:50%;}
+
+  .deck-hint{position:fixed;left:0;right:0;bottom:0;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted);background:rgba(255,255,255,.82);padding:8px;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+  <!-- ===== AI: ONE <section class="slide"> per slide below. Replace these examples. ===== -->
+  <section class="slide">
+    <div class="kicker">Ember · AI product studio</div>
+    <h1>AI, built into<br>the product.</h1>
+    <p>We design and ship AI-native web apps. Replace this with your cover.</p>
+    <div class="pagenum">1</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Quarterly results</div>
+    <h2>Three numbers tell the quarter.</h2>
+    <div class="kpirow">
+      <div class="kpi"><div class="v">+38%</div><div class="l">ARR growth</div></div>
+      <div class="kpi"><div class="v">1,240</div><div class="l">New accounts</div></div>
+      <div class="kpi"><div class="v">4.6</div><div class="l">CSAT (of 5)</div></div>
+    </div>
+    <div class="pagenum">2</div>
+  </section>
+  <!-- ===== end slides ===== -->
+
+  <div class="deck-hint">Press <b>P</b> to present · &rarr; / Space / click to advance · <b>F</b> fullscreen · <b>Esc</b> exit &nbsp;·&nbsp; or Print &rarr; Save as PDF</div>
+
+<script>
+/* Minimal present mode — screen only, no dependencies. */
+(function(){
+  var slides = [].slice.call(document.querySelectorAll('.slide'));
+  var i = 0, on = false;
+  function render(){
+    slides.forEach(function(s,k){ s.classList.toggle('current', on && k===i); });
+    if(on){ var s=slides[i]; if(s){ var k=Math.min(innerWidth/1280, innerHeight/720);
+      s.style.transform='translate(-50%,-50%) scale('+k+')'; } }
+  }
+  function go(n){ i=Math.max(0,Math.min(slides.length-1,n)); render(); }
+  function enter(){ on=true; document.body.classList.add('present'); go(i); }
+  function exit(){ on=false; document.body.classList.remove('present');
+    slides.forEach(function(s){ s.style.transform=''; }); }
+  addEventListener('keydown', function(e){
+    if(e.key==='p'||e.key==='P'){ on?exit():enter(); }
+    else if(!on) return;
+    else if(e.key==='ArrowRight'||e.key===' '){ e.preventDefault(); go(i+1); }
+    else if(e.key==='ArrowLeft'){ go(i-1); }
+    else if(e.key==='Escape'){ exit(); }
+    else if(e.key==='f'||e.key==='F'){ document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen(); }
+  });
+  addEventListener('click', function(){ if(on) go(i+1); });
+  addEventListener('resize', render);
+})();
+</script>
+</body>
+</html>

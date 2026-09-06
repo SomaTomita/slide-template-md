@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patterns · slide_template.md</title>
+<meta name="description" content="Browse 100 grayscale slide layouts — covers, agendas, charts, KPIs, tables, diagrams, and more. Filter by use case and copy the layout recipe.">
+<meta name="theme-color" content="#0066cc">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="slide_template.md">
+<meta property="og:title" content="100 slide patterns · slide_template.md">
+<meta property="og:description" content="100 grayscale slide layouts — covers, agendas, charts, KPIs, tables, diagrams. Filter by use case and copy the recipe.">
+<meta property="og:url" content="https://somatomita.github.io/slide-template-md/patterns.html">
+<meta property="og:image" content="https://somatomita.github.io/slide-template-md/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="slide_template.md — design once, then build slide by slide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="100 slide patterns · slide_template.md">
+<meta name="twitter:description" content="100 grayscale slide layouts. Filter by use case and copy the recipe.">
+<meta name="twitter:image" content="https://somatomita.github.io/slide-template-md/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📑%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/patterns.css">
+<link rel="stylesheet" href="assets/patterns-editorial.css">
+<link rel="stylesheet" href="assets/diagrams.css">
+</head>
+<body>
+<div class="wrap">
+  
+
+  <header class="site-nav"><div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">slide_template<b>.md</b></a></div>
+    <nav><a href="how-to-use.html">How to use</a><a href="patterns.html" class="cur">Patterns</a><a href="examples.html">Examples</a></nav></header>
+
+  <section id="patterns" style="padding-top:6px"><p class="eyebrow" style="font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--blue);font-weight:600;margin:0 0 10px">Pattern library · 100</p><h1 style="font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.04;letter-spacing:-.02em;margin:0 0 10px">Pick a layout pattern.</h1><p class="sec-sub">Layout structures (grayscale). Filter by use case / category. Color comes from your design system.</p></section>
+  <div class="usenote">
+    <b>Three ways to use these:</b>
+    <div class="ways3 dgm">
+      <div class="way">
+        <svg viewBox="0 0 44 36" fill="none" aria-hidden="true"><rect x="6" y="6" width="32" height="20" rx="3" fill="var(--card)" stroke="var(--line)"/><rect x="11" y="11" width="14" height="3" rx="1.5" fill="var(--ink)"/><rect x="11" y="17" width="20" height="2" rx="1" fill="var(--line)"/><rect x="24" y="27" width="16" height="7" rx="3.5" fill="#0066cc"/></svg>
+        <div><p class="wh">One at a time</p><p class="wd">Click any card, then <b>Copy recipe</b> or <b>Download</b>.</p></div>
+      </div>
+      <div class="way">
+        <svg viewBox="0 0 44 36" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="11" rx="2" fill="var(--card)" stroke="var(--line)"/><rect x="24" y="4" width="16" height="11" rx="2" fill="var(--card)" stroke="var(--line)"/><rect x="4" y="19" width="16" height="11" rx="2" fill="var(--card)" stroke="var(--line)"/><rect x="24" y="19" width="16" height="11" rx="2" fill="var(--card)" stroke="var(--line)"/><rect x="2" y="2" width="40" height="30" rx="4" stroke="#0066cc" stroke-dasharray="3 2"/></svg>
+        <div><p class="wh">By category</p><p class="wd">One file per category, in <a href="2-patterns/README.md">the recipes README</a>.</p></div>
+      </div>
+      <div class="way">
+        <svg viewBox="0 0 44 36" fill="none" aria-hidden="true"><path d="M12 3h14l8 8v20a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="var(--card)" stroke="#0066cc" stroke-width="1.4"/><path d="M26 3v8h8" stroke="#0066cc" stroke-width="1.4"/><path d="M15 17h14M15 22h14M15 27h9" stroke="var(--ink)" stroke-width="1.6"/></svg>
+        <div><p class="wh">Everything in one file</p><p class="wd">Hand the AI <code>ALL-PATTERNS.md</code> with your <code>slide_template.md</code>; it picks the layout per slide.</p></div>
+      </div>
+    </div>
+    <div class="cta-row"><button class="filebtn" data-file="2-patterns/ALL-PATTERNS.md">Copy ALL-PATTERNS.md</button><a class="filebtn dl" href="2-patterns/ALL-PATTERNS.md" download>Download</a></div>
+  </div>
+  <div class="filters">
+    <div class="fl"><span class="lbl">Use case</span><button class="btn on" data-uc="all">All</button><button class="btn" data-uc="present">Present</button><button class="btn" data-uc="hybrid">Hybrid</button><button class="btn" data-uc="read">Read</button></div>
+    <div class="fl"><span class="lbl">Category</span><button class="btn on" data-cat="all">All</button><button class="btn" data-cat="Cover">Cover</button><button class="btn" data-cat="Agenda">Agenda</button><button class="btn" data-cat="Content">Content</button><button class="btn" data-cat="Flow">Flow</button><button class="btn" data-cat="Diagram">Diagram</button><button class="btn" data-cat="Card">Cards</button><button class="btn" data-cat="Chart">Charts</button><button class="btn" data-cat="Table">Tables</button><button class="btn" data-cat="KPI">KPI</button><button class="btn" data-cat="FAQ">FAQ</button><button class="btn" data-cat="Profile">Profile</button></div>
+  </div>
+
+  <!-- ============ Covers & sections ============ -->
+  <div class="group"><h2>🎯 Covers &amp; sections</h2><span class="cnt">13 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">cover-title-center</span><span class="tag present">Present</span></div>
+      <div class="slide c-center"><span class="deco" style="width:22cqi;height:22cqi;top:-6cqi;right:-4cqi"></span><span class="deco" style="width:12cqi;height:12cqi;bottom:4cqi;left:6cqi"></span><div class="pad">
+        <div class="kick">Presentation · 2026</div><h2 class="serif" style="margin-top:2.4cqi">A clear title,<br>centered.</h2><p class="sub">Subtitle or one-line catchphrase goes here.</p><div class="ln"></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">cover-with-image-left</span><span class="tag present">Present</span></div>
+      <div class="slide c-split"><div class="img"></div><div class="txt"><div class="lab">Category / Report</div><h2 class="serif">Main title goes here</h2><p class="meta2">Description line · author · date</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">cover-gradient-text-bottom</span><span class="tag present">Present</span></div>
+      <div class="slide c-grad"><div class="pad"><div class="logo" style="width:7cqi;height:3cqi;border-radius:3px">LOGO</div><h2>Cover with a<br>gradient ground.</h2><p class="info">Company name · IR / earnings · FY2026</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">cover-logo-mark-centered</span><span class="tag present">Present</span></div>
+      <div class="slide c-logo"><div class="pad"><div class="logo">LOGO</div><h2 class="serif">Company Inc.</h2><p class="info">Earnings briefing · Listed: TSE Prime · FY2026</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">cover-fullbg-text-left</span><span class="tag present">Present</span></div>
+      <div class="slide c-fbleft"><div class="txt"><div class="lab">Proposal</div><h2 class="serif">Title aligned<br>bottom-left</h2><p class="meta2">Presenter · Affiliation · 2026</p></div><div class="img"></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">cover-minimal-disclaimer</span><span class="tag present">Present</span></div>
+      <div class="slide c-disc"><div class="pad"><div class="logo" style="width:7cqi;height:3cqi;border-radius:3px">LOGO</div><div><h2 class="serif">Investment Strategy 2026</h2><p class="pres">Presented by · Asset Management Dept.</p></div><p class="disc">Disclaimer: This material is for informational purposes only and does not constitute investment advice. Past performance is not indicative of future results.</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">section-divider</span><span class="tag present">Present</span></div>
+      <div class="slide divider"><div class="pad"><div class="barv"></div><div><div class="foot">Section</div><div class="snum">02</div><h2 class="serif">Section title goes here</h2><p class="sub">A subtitle that frames this part of the deck.</p></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">closing-slide</span><span class="tag present">Present</span></div>
+      <div class="slide closing"><div class="pad"><h2 class="serif">Thank you.</h2><p class="info">Company Inc. · Presenter Name<br>hello@example.com</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-cover-topbar</span><span class="tag present">Present</span></div>
+      <div class="slide ed-cover"><div class="pad">
+        <div class="topbar"><span class="kick">A quarterly review · 2026</span><span class="mark">01</span></div>
+        <h2 class="serif">Quarterly<br>Review<br>2026</h2>
+        <div class="footline"><span>Northgate Studio</span><span>Presented by Emma Wilson</span></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-numeral-opener</span><span class="tag present">Present</span></div>
+      <div class="slide ed-open">
+        <div class="l"><div class="top"><span>Section opener</span><span>Eight minutes</span></div><div class="num">Q3</div><div class="bot"><span>Overview</span><span>Four themes</span></div></div>
+        <div class="r"><div class="kick">A reading of the period</div><h2 class="serif">The quarter,<br>in review.</h2><div class="rules"></div><p class="lede">What changed, what held steady, and where attention is most needed in the weeks ahead.</p><div class="marks"><span>Three themes</span><span>Two decisions</span><span>One question</span></div></div>
+      </div></div>
+
+    <div class="card"><div class="meta"><span class="pname">masthead-cover-ornament</span><span class="tag present">Present</span></div>
+      <div class="slide mh-cover"><div class="pad">
+        <div class="top"><span>Prepared by the planning office</span><span>November · MMXXV</span></div>
+        <div class="the">The</div><div class="big">State</div>
+        <div class="mid"><span class="rl"></span><span class="of">of</span><span class="rl"></span></div>
+        <div class="big">the work ahead</div>
+        <div class="credit">A presentation for the leadership team</div>
+        <div class="bot"><span>Volume seven</span><span>Issue two</span></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">notebook-section-ink</span><span class="tag present">Present</span></div>
+      <div class="slide nb-sec"><div class="pad">
+        <div class="mk kick">Section II</div>
+        <div class="lb">Direction<br>&amp; doctrine</div>
+        <h2>Where we<br>are going,<br>and why</h2>
+        <div class="scr">— turn the page —</div>
+        <div class="nb-foot"><span>North Field Office</span><span>04 / 11</span></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">trio-colophon-closer</span><span class="tag read">Read</span></div>
+      <div class="slide tt-fin"><div class="pad">
+        <div class="top"><div><div class="kick">§ 08 — Colophon &amp; index</div><div class="ser">Until the next volume.</div></div><div class="mt">End of issue<br><span>No. 04 · 016 pp.</span></div></div>
+        <div class="big">Fin.</div>
+        <div class="pills"><span class="ink">issue 04</span><span class="soft">spring volume</span><span>colophon</span></div>
+        <div class="cols">
+          <div><h6>Editorial</h6><p>A. Okafor</p><p>B. Lindqvist</p><p>C. Tanaka</p></div>
+          <div><h6>Type</h6><p>Display serif</p><p>Text sans</p><p>Mono for labels</p></div>
+          <div><h6>Printed by</h6><p>Harbor Press</p><p>Portland, OR</p><p>Recycled stock, 120gsm</p></div>
+          <div><h6>Correspondence</h6><p>desk@example.studio</p><p>P.O. Box 0000</p><p>Routing No. 04 / 26</p></div>
+        </div>
+      </div></div></div>
+
+  </div>
+
+  <!-- ============ Agenda / TOC ============ -->
+  <div class="group"><h2>📋 Agenda</h2><span class="cnt">8 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">agenda-toc</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Agenda</div><h2 class="atitle">What we'll cover</h2><div class="body agenda">
+        <div class="ai active"><span class="an">01</span><span class="at">Where the market is heading</span></div>
+        <div class="ai"><span class="an">02</span><span class="at">The problem we keep running into</span></div>
+        <div class="ai"><span class="an">03</span><span class="at">Our approach</span></div>
+        <div class="ai"><span class="an">04</span><span class="at">Results so far</span></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">numbered-toc</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Contents</div><h2 class="atitle">Table of contents</h2><div class="body toc">
+        <div class="tline"><span class="tnum">01</span><span class="tname">Background &amp; context</span><span class="tpg">p.02</span></div>
+        <div class="tline"><span class="tnum">02</span><span class="tname">Market analysis</span><span class="tpg">p.06</span></div>
+        <div class="tline"><span class="tnum">03</span><span class="tname">Strategy</span><span class="tpg">p.11</span></div>
+        <div class="tline"><span class="tnum">04</span><span class="tname">Roadmap &amp; ask</span><span class="tpg">p.16</span></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-column-toc</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Contents</div><h2 class="atitle">A longer agenda</h2><div class="body toc toc2">
+        <div class="tline"><span class="tnum">01</span><span class="tname">Overview</span><span class="tpg">p.02</span></div>
+        <div class="tline"><span class="tnum">05</span><span class="tname">Operations</span><span class="tpg">p.20</span></div>
+        <div class="tline"><span class="tnum">02</span><span class="tname">Market</span><span class="tpg">p.06</span></div>
+        <div class="tline"><span class="tnum">06</span><span class="tname">Finance</span><span class="tpg">p.26</span></div>
+        <div class="tline"><span class="tnum">03</span><span class="tname">Product</span><span class="tpg">p.11</span></div>
+        <div class="tline"><span class="tnum">07</span><span class="tname">Team</span><span class="tpg">p.31</span></div>
+        <div class="tline"><span class="tnum">04</span><span class="tname">Go-to-market</span><span class="tpg">p.15</span></div>
+        <div class="tline"><span class="tnum">08</span><span class="tname">Appendix</span><span class="tpg">p.36</span></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">sidebar-toc-panel</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="tocsplit">
+        <div class="panel"><div class="idx">INDEX</div></div>
+        <div class="items">
+          <div class="it"><b>01</b><span>Monthly summary</span></div>
+          <div class="it"><b>02</b><span>Acquisition &amp; pipeline</span></div>
+          <div class="it"><b>03</b><span>Retention &amp; churn</span></div>
+          <div class="it"><b>04</b><span>Next quarter plan</span></div>
+        </div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">category-toc-simple</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Contents</div><h2 class="atitle">By category</h2><div class="body cat">
+        <div class="crow"><div class="ceng">STRATEGY</div><div class="cjp">The big picture</div><div class="cit"><span>Vision</span><span>Market</span><span>Positioning</span></div></div>
+        <div class="crow"><div class="ceng">EXECUTION</div><div class="cjp">How we deliver</div><div class="cit"><span>Roadmap</span><span>Team</span><span>Ops</span></div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">category-toc-with-image</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="split" style="height:auto;grid-template-columns:1fr 38%"><div><div class="akick">Contents</div><div class="cat" style="margin-top:2cqi">
+        <div class="crow"><div class="ceng">STRATEGY</div><div class="cjp">The big picture</div></div>
+        <div class="crow"><div class="ceng">EXECUTION</div><div class="cjp">How we deliver</div></div>
+        <div class="crow" style="border:0"><div class="ceng">RESULTS</div><div class="cjp">What changed</div></div>
+      </div></div><div class="img" style="height:34cqi"></div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-agenda-tiles</span><span class="tag present">Present</span></div>
+      <div class="slide ed-agenda"><div class="pad">
+        <div class="head"><h2 class="serif">Agenda.</h2><span class="kick">Five topics · ninety minutes</span></div>
+        <div class="tiles">
+          <div class="tp ink"><div><div class="n">01</div><h3>Where we stand today.</h3></div><div class="ft">Context</div></div>
+          <div class="tp soft"><div><div class="n">02</div><h3>The big shift.</h3></div><div class="ft">Insight</div></div>
+          <div class="tp"><div><div class="n">03</div><h3>By the numbers.</h3></div><div class="ft">Data</div></div>
+          <div class="tp acc"><div><div class="n">04</div><h3>How we'll get there.</h3></div><div class="ft">Plan</div></div>
+          <div class="tp soft"><div><div class="n">05</div><h3>What it adds up to.</h3></div><div class="ft">Outcomes</div></div>
+        </div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">notebook-agenda-rows</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide nb-agenda"><div class="pad">
+        <div class="nb-top"><span class="lk kick">What's inside</span><span class="mt"><span>North Field Office</span><span>Phase I</span></span></div>
+        <h2>Four things, in order</h2>
+        <div class="row"><span class="n">01</span><span>The trust gap</span><span class="ld"></span><span class="mt">Findings · 12 min</span></div>
+        <div class="row"><span class="n">02</span><span>Three pilots, scored</span><span class="ld"></span><span class="mt">Evidence · 9 min</span></div>
+        <div class="row"><span class="n">03</span><span>A way of working</span><span class="ld"></span><span class="mt">Method · 7 min</span></div>
+        <div class="row"><span class="n">04</span><span>What we ship next</span><span class="ld"></span><span class="mt">Decisions · 8 min</span></div>
+        <div class="nb-foot"><span>North Field Office</span><span>02 / 11</span></div>
+      </div></div></div>
+
+  </div>
+
+  <!-- ============ Content ============ -->
+  <div class="group"><h2>✏️ Content</h2><span class="cnt">10 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">key-message-single</span><span class="tag present">Present</span></div>
+      <div class="slide s-key"><div class="pad"><div class="label">Key message</div><div class="hr" style="margin-top:2cqi"></div><h2 class="serif">One idea per slide. The <em class="hl">speaker</em> carries the rest.</h2><div class="hr"></div><p class="note" style="border:0;padding:0;margin-top:1cqi">If a slide needs two points, it needs to be two slides.</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-col-text-body</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Comparison</div><h2 class="atitle">Two topics, side by side</h2><div class="body tc">
+        <div><h3>Option A</h3><p>A short paragraph describing the first topic, its strengths, and where it fits best in practice.</p></div>
+        <div><h3>Option B</h3><p>A matching paragraph describing the second topic so the reader can weigh the two directly.</p></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-section-stacked-text</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Background &amp; steps</div><h2 class="atitle">Context, then the plan</h2><div class="body stack">
+        <div><h3>Background</h3><p>A short paragraph that sets up the situation and why it matters now.</p></div>
+        <div><h3>What we'll do</h3><ul><li>First concrete step</li><li>Second concrete step</li><li>Third concrete step</li></ul></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">image-left-text-right</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad" style="justify-content:center"><div class="split"><div class="img imgc"></div><div><div class="lab">The product</div><h2 class="serif">Explain a feature with a visual</h2><ul><li>First key point</li><li>Second key point</li><li>Third key point</li></ul></div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">quote-large-center</span><span class="tag present">Present</span></div>
+      <div class="slide s-quote"><div class="pad"><div class="qmark">&ldquo;</div><p class="qtext">A large quote, a statistic, or a key message — set big to land.</p><p class="qby">— Attribution</p></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-manifesto-split</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide ed-mani">
+        <div class="l"><div><div class="kick">Chapter one · Manifesto</div><div class="chap">01</div></div><p class="lede">We build slowly, ship plainly, <em>and keep the handwriting.</em></p><div class="pg">Page 002 / 016</div></div>
+        <div class="r"><div><div class="h3">An opening note</div><p>Most decks argue. This one explains. Each page carries one idea and enough evidence to trust it.</p><p>Read it in order, or open it anywhere. The structure holds either way.</p></div><div><div class="sig">— with care,</div><div class="who">The editorial desk</div></div></div>
+      </div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-two-col-image-meta</span><span class="tag read">Read</span></div>
+      <div class="slide ed-twocol">
+        <div class="fcol"><div class="fig">Image</div><div class="fcap"><span>Visual 01</span><span>Replace with photo</span></div></div>
+        <div class="tcol"><div class="kick">The big shift</div><h2 class="serif">Fewer bets, stronger commitments.</h2><p>Open with the point you want the room to remember when they walk out. One idea per paragraph.</p><p>Use the second paragraph for proof: a customer, a moment in market, a number that earns the claim.</p>
+          <dl class="dl"><div><dt>Owner</dt><dd>Platform team</dd></div><div><dt>Timeframe</dt><dd>Q2 — Q4</dd></div><div><dt>Status</dt><dd>On track</dd></div></dl></div>
+      </div></div>
+
+    <div class="card"><div class="meta"><span class="pname">notebook-quote-pinned</span><span class="tag present">Present</span></div>
+      <div class="slide nb-quote"><div class="pad">
+        <div class="nb-top"><span class="lk kick">Client voice</span><span class="mt"><span>Phase III</span><span>Evidence</span></span></div>
+        <div class="panel"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="qm">“</div><div><blockquote>Three days in, someone wrote me a real sentence. Nine months later I noticed I'd never been a customer anywhere else again.</blockquote><div class="who">Margaux Lévêque<small>CFO · mid-market retailer · 14 months in</small></div></div></div>
+        <div class="nb-foot"><span>North Field Office</span><span>10 / 11</span></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">trio-quote-endorsements</span><span class="tag read">Read</span></div>
+      <div class="slide tt-quote">
+        <div class="l"><div class="top"><span class="kick">§ 07 — In their words</span><span class="qm">“</span></div><blockquote>A pull-quote set in italic, with one phrase rendered as <b>bold sans</b> for emphasis, the way good editorial designers have always done it.</blockquote><div class="att"><span class="av"></span><div class="who">Amara Okafor<small>Editor-at-large · Sister Publication</small></div></div></div>
+        <div class="r"><div class="lb">Three short reads</div><h3>Voices, lightly edited, from the readership.</h3>
+          <div class="row"><span class="n">i.</span><p><strong>On the rhythm</strong> A two-line testimonial that reads as if spoken across a small kitchen table.</p></div>
+          <div class="row"><span class="n">ii.</span><p><strong>On the company</strong> Another short note, three or four beats long, specific without being precious.</p></div>
+          <div class="row"><span class="n">iii.</span><p><strong>On returning</strong> The closing testimonial, the one that lands after the others have convinced.</p></div>
+        </div>
+      </div></div>
+
+    <div class="card"><div class="meta"><span class="pname">masthead-statement-three</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide mh-state"><div class="pad">
+        <div class="mast"><span class="kick">Overview · A reading of the period</span><span>Three threads</span></div>
+        <h2 class="serif">Three threads<span class="orn"><span class="rl"></span><span class="of">worth</span><span class="rl"></span></span>following closely.</h2>
+        <div class="g">
+          <div class="cell"><div class="n">01</div><h4>A wider field of customers</h4><p>Expansion into adjacent segments held through the period, with new accounts arriving from regions once at the margins.</p></div>
+          <div class="cell"><div class="n">02</div><h4>Quieter, steadier operations</h4><p>Systems were rebuilt around fewer moving parts. Incidents fell, and routine work fell with them.</p></div>
+          <div class="cell"><div class="n">03</div><h4>A renewed product cadence</h4><p>Two releases shipped on the schedule set in spring, with a clearer view of the autumn roadmap.</p></div>
+        </div>
+      </div></div></div>
+
+  </div>
+
+
+
+  <!-- ============ Flow / Steps ============ -->
+  <div class="group"><h2>➡️ Flow &amp; steps</h2><span class="cnt">16 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">four-step-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Process</div><h2 class="atitle nowrap">Four steps, left to right</h2><div class="body"><div class="fbig">
+        <div class="c"><div class="n">1</div><div class="fl">Discover</div><div class="fd">Understand the need and the constraints.</div></div>
+        <div class="c"><div class="n">2</div><div class="fl">Design</div><div class="fd">Shape the approach and align the team.</div></div>
+        <div class="c"><div class="n">3</div><div class="fl">Build</div><div class="fd">Make it real, testing as you go.</div></div>
+        <div class="c"><div class="n">4</div><div class="fl">Ship</div><div class="fd">Release, measure, and learn.</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">four-step-flow-with-callout</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Process</div><h2 class="atitle nowrap">Steps with a side note</h2><div class="body"><div class="fcallout">
+        <div class="vsteps"><div class="rail"></div>
+          <div class="vstep"><div class="vn">1</div><div><div class="vh">Plan</div><div class="vd">Define the goal and owners.</div></div></div>
+          <div class="vstep"><div class="vn">2</div><div><div class="vh">Set up</div><div class="vd">Prepare tools and access.</div></div></div>
+          <div class="vstep"><div class="vn">3</div><div><div class="vh">Run</div><div class="vd">Execute and track progress.</div></div></div>
+          <div class="vstep"><div class="vn">4</div><div><div class="vh">Review</div><div class="vd">Capture what you learned.</div></div></div>
+        </div>
+        <div class="co"><b>Watch out</b>Most delays happen at the handoff between steps 2 and 3 — assign one owner to bridge it.</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">four-step-card-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Project flow</div><h2 class="atitle nowrap">Four stages, with visuals</h2><div class="body"><div class="fimg">
+        <div class="c"><div class="im"><b>STEP 1</b></div><div class="fl">Research</div><div class="fd">Interviews, data, scope.</div></div>
+        <div class="c"><div class="im"><b>STEP 2</b></div><div class="fl">Prototype</div><div class="fd">Draft, test, iterate.</div></div>
+        <div class="c"><div class="im"><b>STEP 3</b></div><div class="fl">Build</div><div class="fd">Develop and QA.</div></div>
+        <div class="c"><div class="im"><b>STEP 4</b></div><div class="fl">Launch</div><div class="fd">Roll out, measure.</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-feature-with-result</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Inputs → outcome</div><h2 class="atitle nowrap">Two features, one result</h2><div class="body"><div class="fres">
+        <div class="two"><div class="fcard2"><h4>Feature A</h4><p>What it does and why it matters.</p></div><div class="fcard2"><h4>Feature B</h4><p>What it does and why it matters.</p></div></div>
+        <svg class="arr2" style="width:3cqi;height:3cqi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+        <div class="result">Together they cut onboarding time by 40%.</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">horizontal-timeline-cards</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Timeline</div><h2 class="atitle nowrap">Four steps over time</h2><div class="body htl">
+        <div class="marks"><i></i><span class="seg"></span><i></i><span class="seg"></span><i></i><span class="seg"></span><i></i></div>
+        <div class="tcards">
+          <div class="tc2"><div class="im"></div><div class="ts">STEP 1</div><div class="th">Kickoff</div><div class="td">Align on goals, scope, and the success metric.</div></div>
+          <div class="tc2"><div class="im"></div><div class="ts">STEP 2</div><div class="th">Build</div><div class="td">Develop the core and review progress weekly.</div></div>
+          <div class="tc2"><div class="im"></div><div class="ts">STEP 3</div><div class="th">Test</div><div class="td">Validate with real users and fix what matters.</div></div>
+          <div class="tc2"><div class="im"></div><div class="ts">STEP 4</div><div class="th">Launch</div><div class="td">Ship to everyone and track adoption.</div></div>
+        </div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">milestone-timeline</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Roadmap</div><h2 class="atitle nowrap">Milestones across the year</h2><div class="body mile2">
+        <div class="m done"><div class="dot"></div><div class="bx"><span class="qh">Q1</span><h4>MVP shipped</h4><p>First working version in the hands of five design partners, with weekly feedback loops.</p></div></div>
+        <div class="m done"><div class="dot"></div><div class="bx"><span class="qh">Q2</span><h4>First 10 customers</h4><p>Paid pilots converted to contracts; the onboarding playbook was documented and reused.</p></div></div>
+        <div class="m"><div class="dot"></div><div class="bx"><span class="qh">Q3</span><h4>General availability</h4><p>Public release with self-serve onboarding and a free trial tier for new sign-ups.</p></div></div>
+        <div class="m"><div class="dot"></div><div class="bx"><span class="qh">Q4</span><h4>Scale</h4><p>Grow the team and expand into two adjacent market segments with localized pricing.</p></div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">three-stage-circle-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">How onboarding works</div><h2 class="atitle nowrap">Three stages</h2><div class="body fcirc textmain" style="margin:auto 0">
+        <div class="node"><div class="circle serif">01</div><div class="clab">Sign up</div><div class="cd">Create your account in just a couple of minutes.</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        <div class="node"><div class="circle serif">02</div><div class="clab">Connect</div><div class="cd">Connect the tools and data you already use.</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        <div class="node"><div class="circle serif">03</div><div class="clab">Go live</div><div class="cd">Go live in production and start seeing value.</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">circle-node-step-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Implementation</div><h2 class="atitle nowrap">Five steps to go-live</h2><div class="body fcirc" style="margin:auto 0">
+        <div class="node"><div class="circle serif">1</div><div class="clab">Scope</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15"/></svg>
+        <div class="node"><div class="circle serif">2</div><div class="clab">Setup</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15"/></svg>
+        <div class="node"><div class="circle serif">3</div><div class="clab">Build</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15"/></svg>
+        <div class="node"><div class="circle serif">4</div><div class="clab">Test</div></div>
+        <svg class="conn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15"/></svg>
+        <div class="node last"><div class="circle serif">5</div><div class="clab">Go-live</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">curved-road-flow</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Journey</div><h2 class="atitle nowrap">A winding four-step road</h2><div class="body"><div class="road">
+        <svg class="ln" viewBox="0 0 100 40" preserveAspectRatio="none" fill="none" stroke="var(--line)" stroke-width="1.4"><path d="M2,28 C14,28 14,12 26,12 S38,28 50,28 S62,12 74,12 S86,28 98,28"/></svg>
+        <div class="node" style="left:13%;top:64%"><div class="circ">01</div><div class="lab">Discover</div><div class="cap">Find the need.</div></div>
+        <div class="node" style="left:38%;top:26%"><div class="circ">02</div><div class="lab">Design</div><div class="cap">Shape it.</div></div>
+        <div class="node" style="left:63%;top:64%"><div class="circ">03</div><div class="lab">Build</div><div class="cap">Make it real.</div></div>
+        <div class="node" style="left:88%;top:26%"><div class="circ">04</div><div class="lab">Launch</div><div class="cap">Ship it.</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">vertical-step-three-col</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Detailed steps</div><h2 class="atitle nowrap">Step, name, detail</h2><div class="body v3">
+        <div class="r"><div class="b">1</div><div class="nm">Scoping</div><div class="dt">Define goals and success metrics.</div></div>
+        <div class="r"><div class="b">2</div><div class="nm">Setup</div><div class="dt">Provision accounts and access.</div></div>
+        <div class="r"><div class="b">3</div><div class="nm">Migration</div><div class="dt">Move and validate the data.</div></div>
+        <div class="r"><div class="b">4</div><div class="nm">Training</div><div class="dt">Onboard the team.</div></div>
+        <div class="r" style="border:0"><div class="b">5</div><div class="nm">Go-live</div><div class="dt">Switch over and monitor.</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">vertical-timeline-label-list</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Process</div><h2 class="atitle nowrap">A labeled timeline</h2><div class="body vtl"><div class="rail"></div>
+        <div class="row"><div class="lbl"><div class="dot"></div><div class="nm">Inquiry</div></div><div class="bx">Tell us what you need; we reply within one business day.</div></div>
+        <div class="row"><div class="lbl"><div class="dot"></div><div class="nm">Proposal</div></div><div class="bx">We share a plan, timeline, and quote tailored to your goals.</div></div>
+        <div class="row"><div class="lbl"><div class="dot"></div><div class="nm">Kickoff</div></div><div class="bx">We align on scope and start the engagement together.</div></div>
+        <div class="row"><div class="lbl"><div class="dot"></div><div class="nm">Delivery</div></div><div class="bx">We hand off the work and support you through rollout.</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">sequence-diagram-2</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">How it works</div><h2 class="atitle nowrap">Login &amp; session, step by step</h2><div class="body seq seq2">
+        <div class="head"><div class="a"><span class="ttl"><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M3 9h18"/></svg>Browser</span></div><div class="a"><span class="ttl"><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="7" rx="1"/><rect x="4" y="13" width="16" height="7" rx="1"/></svg>Server</span></div></div>
+        <div class="seqbody">
+          <span class="ll" style="left:25%"></span><span class="ll" style="left:75%"></span>
+          <div class="msg r"><span class="line" style="left:25%;right:25%"></span><span class="lab"><span class="n">1</span>Login (ID / PW)</span></div>
+          <div class="msg l"><span class="line" style="left:25%;right:25%"></span><span class="lab"><span class="n">2</span>Issue session ID (Set-Cookie)</span></div>
+          <div class="msg r"><span class="line" style="left:25%;right:25%"></span><span class="lab"><span class="n">3</span>Auto-send the ID next time</span></div>
+        </div>
+        <div class="seqnote">The session ID lets a stateless protocol recognize the logged-in user on every request.</div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">sequence-diagram-3</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">How it works</div><h2 class="atitle nowrap">Three actors, secure by design</h2><div class="body seq seq3">
+        <div class="head"><div class="a"><span class="ttl"><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M3 9h18"/></svg>App</span></div><div class="a"><span class="ttl"><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="7" rx="1"/><rect x="4" y="13" width="16" height="7" rx="1"/></svg>Server</span></div><div class="a"><span class="ttl"><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>Vault</span></div></div>
+        <div class="seqbody">
+          <span class="ll" style="left:17%"></span><span class="ll" style="left:50%"></span><span class="ll" style="left:83%"></span>
+          <div class="msg r"><span class="line" style="left:17%;right:50%"></span><span class="lab" style="left:33%"><span class="n">1</span>Login (ID / PW)</span></div>
+          <div class="msg r"><span class="line" style="left:50%;right:17%"></span><span class="lab" style="left:66%"><span class="n">2</span>Store in the vault</span></div>
+          <div class="msg l"><span class="line" style="left:17%;right:50%"></span><span class="lab" style="left:33%"><span class="n">3</span>Return name &amp; role only</span></div>
+        </div>
+        <div class="seqnote">The secret never passes through JS — the browser attaches it automatically, so it can't be stolen and reused.</div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">gantt-schedule</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Schedule</div><h2 class="atitle nowrap">Project plan across the year</h2><div class="body"><div class="gantt">
+        <div class="ghead"><div></div><div class="qs"><div class="q">Q1</div><div class="q">Q2</div><div class="q">Q3</div><div class="q">Q4</div></div></div>
+        <div class="grow"><div class="gtask">Research</div><div class="gtrack"><div class="gl"><i></i><i></i><i></i><i></i></div><div class="gbar" style="left:0;width:28%"></div></div></div>
+        <div class="grow"><div class="gtask">Design</div><div class="gtrack"><div class="gl"><i></i><i></i><i></i><i></i></div><div class="gbar" style="left:22%;width:30%"></div></div></div>
+        <div class="grow"><div class="gtask">Build</div><div class="gtrack"><div class="gl"><i></i><i></i><i></i><i></i></div><div class="gbar hot" style="left:46%;width:38%"></div></div></div>
+        <div class="grow"><div class="gtask">Launch</div><div class="gtrack"><div class="gl"><i></i><i></i><i></i><i></i></div><div class="gbar" style="left:80%;width:18%"></div></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">editorial-four-step-tiles</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide ed-steps"><div class="pad">
+        <div class="head"><span class="kick">How we'll get there</span><span>Four steps</span></div>
+        <h2 class="serif">A simple plan, in four moves.</h2>
+        <div class="flow">
+          <div class="st"><div class="n">Step 01</div><h3>Listen</h3><p>Open the quarter with structured conversations across teams. Capture what we hear.</p><div class="mk"><span>Weeks 1–2</span><span>Owner</span></div></div>
+          <div class="st soft"><div class="n">Step 02</div><h3>Align</h3><p>Cluster signals into themes. Name them plainly so every room uses the same words.</p><div class="mk"><span>Week 3</span><span>Owner</span></div></div>
+          <div class="st fill"><div class="n">Step 03</div><h3>Build</h3><p>Translate the themes into a short list of bets. Decide what we keep and what we cut.</p><div class="mk"><span>Weeks 4–6</span><span>Owner</span></div></div>
+          <div class="st"><div class="n">Step 04</div><h3>Ship</h3><p>Put the work in market on a known cadence. Measure against the plan; adjust.</p><div class="mk"><span>Weeks 7–12</span><span>Owner</span></div></div>
+        </div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">trio-timeline-five-stops</span><span class="tag read">Read</span></div>
+      <div class="slide tt-tl"><div class="pad">
+        <div class="head"><h2>A short trajectory, told in five stops.</h2><div class="mt kick">§ 05 — Trajectory<br><span>2019 → present</span></div></div>
+        <div class="track"><div class="axis"></div><div class="stops">
+          <div class="stop"><span class="dot"></span><div class="yr">'19</div><h5>The first prototype</h5><p>One observation, one consequence, written in plain prose.</p></div>
+          <div class="stop"><span class="dot"></span><div class="yr">'21</div><h5>Quiet expansion</h5><p>A turning point, kept concrete rather than abstract.</p></div>
+          <div class="stop"><span class="dot"></span><div class="yr">'23</div><h5>A new house style</h5><p>Type, color and voice re-cast around one editorial premise.</p></div>
+          <div class="stop"><span class="dot"></span><div class="yr">'25</div><h5>The salon, formalized</h5><p>Monthly gatherings became a fixture, then a discipline.</p></div>
+          <div class="stop"><span class="dot"></span><div class="yr">'26</div><h5>Where we sit now</h5><p>Present tense. The shape of the practice today, in two breaths.</p></div>
+        </div></div>
+        <div class="ribbon"><span>Next chapter</span><strong>— and the work continues, gently.</strong><span>Vol. 04</span></div>
+      </div></div></div>
+
+  </div>
+
+
+
+  <!-- ============ Diagrams ============ -->
+  <div class="group"><h2>🔄 Diagrams</h2><span class="cnt">12 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">flowchart-decision</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Decision flow</div><h2 class="atitle nowrap">A flowchart with a branch</h2><div class="body"><div class="flow-dec">
+        <div class="fb">Request received</div>
+        <svg class="dn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+        <div class="dia2"><svg viewBox="0 0 100 80" preserveAspectRatio="none" fill="var(--card)" stroke="var(--line)" stroke-width="1.4"><polygon points="50,3 97,40 50,77 3,40"/></svg><span>Within<br>budget?</span></div>
+        <svg class="dn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+        <div class="two"><div class="fb">Yes → Approve</div><div class="fb">No → Escalate</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">swimlane-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Swimlanes</div><h2 class="atitle nowrap">Who does what, in order</h2><div class="body"><div class="swim">
+        <div class="lane"><div class="role">Customer</div><div class="steps"><div class="s">Signs up online and uploads the required documents through the portal.</div><svg class="sa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg><div class="s">Receives login credentials and a short onboarding guide by email.</div></div></div>
+        <div class="lane"><div class="role">Our team</div><div class="steps"><div class="s">Verifies the documents and provisions the account within one business day.</div><svg class="sa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg><div class="s">Schedules a kickoff call and hands over to the success team.</div></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-circle-bilateral-flow</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Relationship</div><h2 class="atitle nowrap">Two sides, one exchange</h2><div class="body" style="display:flex;justify-content:center"><div class="bicircle">
+        <div class="cc2">Platform</div>
+        <div class="mid"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 8h10M7 8l3-3M7 8l3 3M17 16H7M17 16l-3-3M17 16l-3 3"/></svg></div>
+        <div class="cc2">Partners</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">funnel-diagram</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Conversion funnel</div><h2 class="atitle nowrap">From visitors to customers</h2><div class="body" style="justify-content:center"><div class="funnel">
+        <div class="fstage" style="width:94%">Visitors <span class="v">12,000</span></div>
+        <div class="fstage" style="width:74%">Leads <span class="v">3,400</span></div>
+        <div class="fstage" style="width:54%">Trials <span class="v">820</span></div>
+        <div class="fstage hot" style="width:36%">Customers <span class="v">210</span></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">pyramid-hierarchy</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Hierarchy</div><h2 class="atitle nowrap">From vision to execution</h2><div class="body" style="justify-content:center"><div class="pyr">
+        <div class="lvl" style="width:36%;background:var(--accent)">Vision</div>
+        <div class="lvl" style="width:58%;background:#6f6f6b">Strategy</div>
+        <div class="lvl" style="width:80%;background:#9c9c97">Tactics</div>
+        <div class="lvl" style="width:100%;background:#c2c2bd;color:var(--ink)">Execution</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">circle-hub-list-right</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Benefits</div><h2 class="atitle nowrap">One theme, many wins</h2><div class="body" style="display:grid;grid-template-columns:34% 1fr;gap:5cqi;align-items:center">
+        <div class="center" style="position:static;transform:none;width:24cqi;height:24cqi;border:1.6px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--serif);font-size:3.2cqi;margin:0 auto">Why us</div>
+        <div class="toc" style="margin:0"><div class="tline"><span class="tnum">1</span><span class="tname">Faster setup</span></div><div class="tline"><span class="tnum">2</span><span class="tname">Lower cost</span></div><div class="tline"><span class="tnum">3</span><span class="tname">Better support</span></div><div class="tline"><span class="tnum">4</span><span class="tname">Proven results</span></div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">venn-two-overlap</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Overlap</div><h2 class="atitle nowrap">Where two things meet</h2><div class="body"><div class="venn">
+        <div class="c l">Design</div>
+        <div class="c r">Engineering</div>
+        <div class="mid">Great<br>product</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">four-quadrant-center-circle</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Four pillars</div><h2 class="atitle nowrap">One core, four values</h2><div class="body"><div class="quad">
+        <div class="q"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/></svg><div class="t">Trust</div><div class="d">Built on transparency — clear pricing and open security practices.</div></div>
+        <div class="q"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h16M12 4v16"/></svg><div class="t">Speed</div><div class="d">Ship value quickly, with weekly releases and fast feedback.</div></div>
+        <div class="q"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l9 9-9 9-9-9z"/></svg><div class="t">Quality</div><div class="d">Crafted to last and easy to maintain as you grow.</div></div>
+        <div class="q"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18c4-8 12-8 16 0"/></svg><div class="t">Care</div><div class="d">People come first — responsive, human support, always.</div></div>
+        <div class="cc">Core</div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">donut-chart-spoke-labels</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Composition</div><h2 class="atitle nowrap">Where the budget goes</h2><div class="body donutwrap">
+        <div class="donut"></div>
+        <div class="dlist"><div class="dl"><i></i><span class="t">Engineering</span><span class="v">34%</span></div><div class="dl"><i class="g2"></i><span class="t">Sales</span><span class="v">26%</span></div><div class="dl"><i class="g3"></i><span class="t">Marketing</span><span class="v">22%</span></div><div class="dl"><i class="g4"></i><span class="t">Operations</span><span class="v">18%</span></div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">org-chart-tree</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Organization</div><h2 class="atitle nowrap">How the team is structured</h2><div class="body" style="display:flex;align-items:center;justify-content:center"><div class="org">
+        <div class="box">Board</div><div class="conn"></div><div class="box">CEO</div><div class="conn"></div><div class="hbar"></div>
+        <div class="row" style="margin-top:0"><div class="conn"></div></div>
+        <div class="row"><div class="box">Product</div><div class="box">Engineering</div><div class="box">Sales</div><div class="box">Operations</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">two-column-split-boxes</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Before / After</div><h2 class="atitle nowrap">From manual chaos to a clean workflow</h2><div class="body splitbox">
+        <div class="bx"><div class="t">Before</div><div class="d">Every deck was rebuilt from scratch. Fonts and colors drifted between slides, and reviewers spent hours fixing formatting instead of improving the message. Nothing was reusable, so the same mistakes returned every quarter.</div></div>
+        <div class="mid"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+        <div class="bx after"><div class="t">After</div><div class="d">One design file now drives every slide, so the look is consistent by default. The team picks a layout pattern, drops in content, and ships in minutes — and last quarter's deck becomes this quarter's starting point.</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">kanban-board</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Status board</div><h2 class="atitle nowrap">Work in three columns</h2><div class="body"><div class="kanban">
+        <div class="col"><div class="ch">To do <span class="ct">3</span></div><div class="kc">Research competitors</div><div class="kc">Draft the spec</div><div class="kc">Line up interviews</div></div>
+        <div class="col"><div class="ch">Doing <span class="ct">2</span></div><div class="kc">Build the prototype</div><div class="kc">Write test cases</div></div>
+        <div class="col done"><div class="ch">Done <span class="ct">2</span></div><div class="kc">Kickoff &amp; goals</div><div class="kc">Tech spike</div></div>
+      </div></div></div></div></div>
+
+  </div>
+
+
+
+
+
+  <!-- ============ Cards / Grid ============ -->
+  <div class="group"><h2>🃏 Cards &amp; grids</h2><span class="cnt">11 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">testimonial-2x2-avatar</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Customer voices</div><h2 class="atitle nowrap">Four customers, in their own words</h2><div class="body"><div class="tstm">
+        <div class="tc"><div class="ava"></div><div><h4>Onboarding took a day, not a month</h4><p>“We were live before the kickoff call ended. The team barely needed training.”</p></div></div>
+        <div class="tc"><div class="ava"></div><div><h4>Support that actually answers</h4><p>“Every question came back within the hour, with a fix, not a ticket number.”</p></div></div>
+        <div class="tc"><div class="ava"></div><div><h4>Reporting we finally trust</h4><p>“Finance and sales now look at the same numbers. The debates stopped.”</p></div></div>
+        <div class="tc"><div class="ava"></div><div><h4>Paid for itself in one quarter</h4><p>“We cut two tools and a spreadsheet. The savings covered the annual plan.”</p></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">testimonial-rows-photo</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Customer voices</div><h2 class="atitle nowrap">What three long-time customers say</h2><div class="body"><div class="tstm rows">
+        <div class="tc"><div class="img"></div><div class="tx"><div class="who">Harbor Logistics · Operations Director</div><p>“Dispatch used to take three people every morning. Now one person clears it before nine, and the drivers get their routes on time.”</p></div></div>
+        <div class="tc"><div class="img"></div><div class="tx"><div class="who">Northgate Clinics · Practice Manager</div><p>“No-shows dropped by a third once reminders went out automatically. Our front desk finally has time for the patients in the room.”</p></div></div>
+        <div class="tc"><div class="img"></div><div class="tx"><div class="who">Ember Studio · Founder</div><p>“Invoices go out the day a project closes. We stopped chasing payments and started planning the next quarter instead.”</p></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">four-card-2x2</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Overview</div><h2 class="atitle">Four key points</h2><div class="body"><div class="cards c2 fill">
+        <div class="cd"><div class="cnum">01</div><h4>Speed</h4><p>Ship value in days, not months.</p></div>
+        <div class="cd"><div class="cnum">02</div><h4>Quality</h4><p>Crafted to last and easy to maintain.</p></div>
+        <div class="cd"><div class="cnum">03</div><h4>Trust</h4><p>Built on transparency and security.</p></div>
+        <div class="cd"><div class="cnum">04</div><h4>Care</h4><p>People and support come first.</p></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">six-card-2x3-grid</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad" style="justify-content:center"><div class="cardside" style="grid-template-columns:26% 1fr;height:38cqi"><div class="sl">Our services<small>Everything in one place</small></div><div class="cards c3" style="height:37cqi">
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/></svg><h4>Strategy</h4><p>Plan with clarity.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/></svg><h4>Design</h4><p>Make it beautiful.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l9 9-9 9-9-9z"/></svg><h4>Build</h4><p>Ship it well.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18c4-8 12-8 16 0"/></svg><h4>Grow</h4><p>Scale with data.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg><h4>Support</h4><p>Stay reliable.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12.5l5 5L20 6"/></svg><h4>Success</h4><p>Reach the goal.</p></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">eight-card-2x4-grid</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Initiatives</div><h2 class="atitle">Eight focus areas</h2><div class="body"><div class="cards c4 fill">
+        <div class="cd"><div class="nbadge">1</div><p>Lower acquisition cost across paid channels.</p></div>
+        <div class="cd"><div class="nbadge">2</div><p>Faster onboarding with a guided setup flow.</p></div>
+        <div class="cd"><div class="nbadge">3</div><p>Higher retention through proactive success.</p></div>
+        <div class="cd"><div class="nbadge">4</div><p>Better support with 24/7 priority coverage.</p></div>
+        <div class="cd"><div class="nbadge">5</div><p>New integrations across the core stack.</p></div>
+        <div class="cd"><div class="nbadge">6</div><p>Pricing revamp for clearer, fairer tiers.</p></div>
+        <div class="cd"><div class="nbadge">7</div><p>Brand refresh across web and product.</p></div>
+        <div class="cd"><div class="nbadge">8</div><p>Team growth in sales and engineering.</p></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">three-column-icon-card</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Why us</div><h2 class="atitle">Three strengths</h2><div class="body"><div class="cards c3 fill">
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><h4>Fast</h4><p>Get to first value on day one — no long setup, no training required.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5L12 21l-5-2.8 1-5.5-4-3.9 5.5-.8z"/></svg><h4>Trusted</h4><p>Used by thousands of teams worldwide, with enterprise-grade security.</p></div>
+        <div class="cd"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5-7-11a4 4 0 018-1 4 4 0 018 1c0 6-7 11-7 11z"/></svg><h4>Loved</h4><p>Rated 4.8 / 5 on average, with support people actually recommend.</p></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">three-col-icon-card-header-band</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Our plans</div><h2 class="atitle">Three offers</h2><div class="body"><div class="cards c3 fill">
+        <div class="cd band"><div class="bandh"><div class="hx">A</div><b>Launch</b></div><div class="bandbody"><ul class="ul"><li>Core features</li><li>Email support</li></ul><span class="chip">From $0</span></div></div>
+        <div class="cd band"><div class="bandh"><div class="hx">B</div><b>Grow</b></div><div class="bandbody"><ul class="ul"><li>Everything in Launch</li><li>Integrations</li></ul><span class="chip">$49 / mo</span></div></div>
+        <div class="cd band"><div class="bandh"><div class="hx">C</div><b>Scale</b></div><div class="bandbody"><ul class="ul"><li>Everything in Grow</li><li>Dedicated manager</li></ul><span class="chip">$149 / mo</span></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">three-col-numbered-card</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Selected for you</div><h2 class="atitle">Three reasons we win</h2><div class="body"><div class="cards c3 fill">
+        <div class="cd numbered"><div class="nb">Reason</div><div class="bignum">01</div><div class="uline"></div><h4>Proven results</h4><ul class="ul"><li>+38% growth on average</li></ul></div>
+        <div class="cd numbered"><div class="nb">Reason</div><div class="bignum">02</div><div class="uline"></div><h4>Easy to adopt</h4><ul class="ul"><li>Live in a single day</li></ul></div>
+        <div class="cd numbered"><div class="nb">Reason</div><div class="bignum">03</div><div class="uline"></div><h4>Fair pricing</h4><ul class="ul"><li>One simple plan</li></ul></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">feature-metrics-four-cells</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Features &amp; impact</div><h2 class="atitle">Four features, measured</h2><div class="body"><div class="cards c4 fill">
+        <div class="cd feat"><h4>Automation</h4><p>Hands-off workflows.</p><div class="kpis2"><div class="k"><div class="v">-60%</div><div class="l">manual work</div></div></div></div>
+        <div class="cd feat"><h4>Insights</h4><p>Live dashboards.</p><div class="kpis2"><div class="k"><div class="v">3x</div><div class="l">faster decisions</div></div></div></div>
+        <div class="cd feat"><h4>Onboarding</h4><p>Guided setup.</p><div class="kpis2"><div class="k"><div class="v">1 day</div><div class="l">to live</div></div></div></div>
+        <div class="cd feat"><h4>Support</h4><p>Always on.</p><div class="kpis2"><div class="k"><div class="v">4.8</div><div class="l">CSAT</div></div></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">pinned-notecards</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide ed-pins"><div class="pad">
+        <div class="top"><span class="kick">Principles</span><span class="meta3">North Field Office · Phase II</span></div>
+        <h2 class="serif">Three rules we're keeping</h2>
+        <div class="cards3">
+          <div class="nc"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="n">Rule · 01</div><h4>Write the<br>real sentence</h4><p>If a customer wouldn't read the email, the email is not the work.</p><div class="scr">— write it by hand first.</div></div>
+          <div class="nc alt"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="n">Rule · 02</div><h4>Earn the<br>second look</h4><p>The first 72 hours do four times the work of week three. Spend accordingly.</p><div class="scr">no autoresponder, ever.</div></div>
+          <div class="nc alt2"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="n">Rule · 03</div><h4>Keep the<br>handwriting</h4><p>The system may grow, but the voice stays small enough to know who you wrote to.</p><div class="scr">200 names, max.</div></div>
+        </div>
+        <div class="footline"><span>North Field Office</span><span>03 / 11</span></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">trio-principles-grid</span><span class="tag read">Read</span></div>
+      <div class="slide tt-grid"><div class="pad">
+        <div class="head"><h2>Eight principles, loosely held.</h2><span class="mt kick">§ 03 — Principles</span></div>
+        <div class="g">
+          <div class="cd a"><div class="n">/ 01</div><h4>Slow looking</h4><p>Two sentences is plenty. Describe the principle in plain language.</p></div>
+          <div class="cd"><div class="n">/ 02</div><h4>Open kitchen</h4><p>Process in public. Show the seams and the half-formed thoughts.</p></div>
+          <div class="cd b"><div class="n">/ 03</div><h4>Borrowed light</h4><p>Cite generously. Name the room you walked into.</p></div>
+          <div class="cd"><div class="n">/ 04</div><h4>Quiet defaults</h4><p>Restraint as a posture. Loud only when the moment earns it.</p></div>
+          <div class="cd"><div class="n">/ 05</div><h4>Fewer, finer</h4><p>Three considered objects beat thirty hurried ones.</p></div>
+          <div class="cd c"><div class="n">/ 06</div><h4>Generous edges</h4><p>Margins are mercy. Leave room for the reader to breathe.</p></div>
+          <div class="cd"><div class="n">/ 07</div><h4>Plain words</h4><p>If a sentence needs a footnote, rewrite the sentence.</p></div>
+          <div class="cd a"><div class="n">/ 08</div><h4>Return often</h4><p>Good work is revisited. Build the habit of coming back.</p></div>
+        </div>
+      </div></div></div>
+
+  </div>
+
+
+
+  <!-- ============ Charts & data ============ -->
+  <div class="group"><h2>📊 Charts &amp; data</h2><span class="cnt">10 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">bar-chart-full</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Revenue · FY25</div><h2 class="atitle nowrap">Revenue grew fastest in Q4</h2><div class="body">
+        <div class="barchart"><div class="bc"><span class="bv">2.1</span><span class="bb" style="height:40%"></span></div><div class="bc"><span class="bv">2.6</span><span class="bb" style="height:50%"></span></div><div class="bc"><span class="bv">3.0</span><span class="bb" style="height:60%"></span></div><div class="bc hot"><span class="bv">4.2</span><span class="bb" style="height:90%"></span></div></div>
+        <div class="bxx"><div>Q1</div><div>Q2</div><div>Q3</div><div>Q4</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">kpi-bar-chart</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">ARR</div><h2 class="atitle nowrap">One metric, with its trend</h2><div class="body split6040">
+        <div><div class="gbig">$4.2M</div><p style="font-size:1.8cqi;color:var(--body);margin-top:1.2cqi;line-height:1.4">Annual recurring revenue — up 41% year over year.</p></div>
+        <div><div class="barchart" style="height:27cqi"><div class="bc"><span class="bb" style="height:42%"></span></div><div class="bc"><span class="bb" style="height:52%"></span></div><div class="bc"><span class="bb" style="height:62%"></span></div><div class="bc hot"><span class="bb" style="height:92%"></span></div></div><div class="bxx"><div>Q1</div><div>Q2</div><div>Q3</div><div>Q4</div></div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">bar-line-combo</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Revenue &amp; growth</div><h2 class="atitle nowrap">Revenue and growth rate, together</h2>
+        <p style="font-size:1.95cqi;color:var(--body);margin:.6cqi 0 0">Bars show revenue; the line shows quarter-over-quarter growth.</p>
+        <div class="body"><div class="combo">
+          <div class="barchart"><div class="bc"><span class="bb" style="height:40%"></span></div><div class="bc"><span class="bb" style="height:52%"></span></div><div class="bc"><span class="bb" style="height:62%"></span></div><div class="bc"><span class="bb" style="height:92%"></span></div></div>
+          <svg class="ov" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none"><polyline points="12.5,64 37.5,52 62.5,46 87.5,22" stroke="var(--accent)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>
+        </div><div class="bxx"><div>Q1</div><div>Q2</div><div>Q3</div><div>Q4</div></div></div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">chart-with-callout</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Survey · n=1,200</div><h2 class="atitle nowrap">Most users want faster setup</h2><div class="body split6040 chartcal">
+        <div class="ccol"><div class="donutc"><div class="dn" style="background:conic-gradient(var(--accent) 0 62%,#dcdcd8 62% 100%)"></div><div class="cl"><div class="v">62%</div></div></div><div class="dlab">want faster setup</div></div>
+        <div class="gco">"Setup took too long" was the #1 reason for churn in the first 30 days — addressing it is our top priority.</div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">pie-chart-left-list-right</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Composition</div><h2 class="atitle nowrap">Where the budget goes</h2><div class="body">
+        <div class="split6040" style="align-items:center"><div class="donutc" style="width:20cqi;height:20cqi"><div class="dn"></div></div>
+          <div class="glegend"><div class="lg"><i></i>Engineering<span class="v">34%</span></div><div class="lg"><i class="g2"></i>Sales<span class="v">26%</span></div><div class="lg"><i class="g3"></i>Marketing<span class="v">22%</span></div><div class="lg"><i class="g4"></i>Operations<span class="v">18%</span></div></div></div>
+        <p style="font-size:1.7cqi;color:var(--body);line-height:1.45;margin-top:2.2cqi;border-top:1px solid var(--line);padding-top:1.6cqi"><b style="color:var(--ink)">Engineering remains the largest line</b> and grew again this year as we moved the platform onto its own infrastructure. Marketing's share rose four points to support the new product launch, funded by a smaller operations budget after last year's tooling consolidation. Sales held flat in percentage terms while growing in absolute spend.</p>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">horizontal-bar-chart</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Key metrics</div><h2 class="atitle nowrap">Five metrics at a glance</h2><div class="body" style="justify-content:center"><div class="hbars" style="gap:2.4cqi">
+        <div class="hb hot"><span class="hl2">Revenue</span><span class="tr" style="height:3.3cqi"><i style="width:84%"></i></span><span class="hv">84%</span></div>
+        <div class="hb"><span class="hl2">Pipeline</span><span class="tr" style="height:3.3cqi"><i style="width:62%"></i></span><span class="hv">62%</span></div>
+        <div class="hb"><span class="hl2">Retention</span><span class="tr" style="height:3.3cqi"><i style="width:91%"></i></span><span class="hv">91%</span></div>
+        <div class="hb"><span class="hl2">Expansion</span><span class="tr" style="height:3.3cqi"><i style="width:48%"></i></span><span class="hv">48%</span></div>
+        <div class="hb"><span class="hl2">NPS</span><span class="tr" style="height:3.3cqi"><i style="width:71%"></i></span><span class="hv">71%</span></div>
+      </div><p style="font-size:1.7cqi;color:var(--taupe);text-align:center;margin-top:2.4cqi;line-height:1.45;max-width:82%;margin-left:auto;margin-right:auto">Retention and revenue lead the quarter; expansion is the clear focus for next.</p></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">headline-three-donut-charts</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Quarterly goals</div><h2 class="atitle nowrap">Three goals, mostly on track</h2><div class="body threecol-charts" style="align-items:start">
+        <div><div class="donutc prog" style="margin:0 auto;width:16.5cqi;height:16.5cqi"><div class="dn" style="background:conic-gradient(var(--accent) 0 92%,#dcdcd8 92% 100%)"></div><div class="cl"><div class="v">92%</div></div></div><div class="dlab">On-time</div><p class="dcap">Shipped on schedule across nearly every sprint this quarter. Only one release slipped, and only by two days — a clear step up from last year.</p></div>
+        <div><div class="donutc prog" style="margin:0 auto;width:16.5cqi;height:16.5cqi"><div class="dn" style="background:conic-gradient(var(--accent) 0 78%,#dcdcd8 78% 100%)"></div><div class="cl"><div class="v">78%</div></div></div><div class="dlab">Adoption</div><p class="dcap">Most invited teams are now active and using the product weekly. Adoption is climbing fastest among mid-market accounts.</p></div>
+        <div><div class="donutc prog" style="margin:0 auto;width:16.5cqi;height:16.5cqi"><div class="dn" style="background:conic-gradient(var(--accent) 0 65%,#dcdcd8 65% 100%)"></div><div class="cl"><div class="v">65%</div></div></div><div class="dlab">CSAT</div><p class="dcap">Satisfaction is solid and steady. Support response time is the one area we're investing in to push this higher next quarter.</p></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">text-body-left-donut-right</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Adoption</div><h2 class="atitle nowrap">Most teams are now active</h2><div class="body split6040 donutside">
+        <div><p style="font-size:2.3cqi;color:var(--body);line-height:1.5;margin:0 0 1.8cqi">Within three months of launch, the majority of invited teams had activated and run their first project.</p><ul class="ul facts"><li>412 teams invited</li><li>71% activated</li></ul></div>
+        <div class="dcol"><div class="donutc prog"><div class="dn" style="background:conic-gradient(var(--accent) 0 71%,#dcdcd8 71% 100%)"></div><div class="cl"><div class="v">71%</div></div></div><div class="dlab">activated</div></div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">three-col-kpi-with-chart</span><span class="tag hybrid">Hybrid</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Market</div><h2 class="atitle nowrap">Three metrics at a glance</h2><div class="body"><div class="cards c3 fill">
+        <div class="cd"><div class="gbig" style="font-size:5cqi">$2.4B</div><p>Market size</p><div class="minibars"><i style="height:40%"></i><i style="height:60%"></i><i style="height:75%"></i><i class="hot" style="height:100%"></i></div><p style="font-size:1.45cqi;color:var(--taupe);margin-top:.9cqi;line-height:1.3">Total addressable market, growing every year.</p></div>
+        <div class="cd"><div class="gbig" style="font-size:5cqi">18%</div><p>Annual growth</p><div class="minibars"><i style="height:50%"></i><i style="height:55%"></i><i style="height:70%"></i><i class="hot" style="height:90%"></i></div><p style="font-size:1.45cqi;color:var(--taupe);margin-top:.9cqi;line-height:1.3">Segment CAGR over the last four years.</p></div>
+        <div class="cd"><div class="gbig" style="font-size:5cqi">12%</div><p>Our share</p><div class="minibars"><i style="height:30%"></i><i style="height:45%"></i><i style="height:65%"></i><i class="hot" style="height:85%"></i></div><p style="font-size:1.45cqi;color:var(--taupe);margin-top:.9cqi;line-height:1.3">Our share today, up from 7% in 2023.</p></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">stacked-bar-chart</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Revenue mix</div><h2 class="atitle nowrap">Revenue mix shifted to subscriptions</h2><div class="body">
+        <div class="stackbar">
+          <div class="sbcol"><span class="seg s1" style="height:6cqi"></span><span class="seg s2" style="height:4cqi"></span><span class="seg s3" style="height:3cqi"></span></div>
+          <div class="sbcol"><span class="seg s1" style="height:8cqi"></span><span class="seg s2" style="height:4cqi"></span><span class="seg s3" style="height:2.5cqi"></span></div>
+          <div class="sbcol"><span class="seg s1" style="height:11cqi"></span><span class="seg s2" style="height:3.5cqi"></span><span class="seg s3" style="height:2cqi"></span></div>
+          <div class="sbcol"><span class="seg s1" style="height:15cqi"></span><span class="seg s2" style="height:3cqi"></span><span class="seg s3" style="height:1.5cqi"></span></div>
+        </div>
+        <div class="bxx"><div>Q1</div><div>Q2</div><div>Q3</div><div>Q4</div></div>
+        <div class="hlegend"><span class="lg"><i class="s1"></i>Subscription</span><span class="lg"><i class="s2"></i>Services</span><span class="lg"><i class="s3"></i>One-time</span></div>
+      </div></div></div></div>
+
+  </div>
+
+
+
+  <!-- ============ Tables / Comparison ============ -->
+  <div class="group"><h2>📑 Tables</h2><span class="cnt">6 patterns</span></div>
+  <div class="grid">
+    <div class="card"><div class="meta"><span class="pname">comparison-matrix-table</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Comparison</div><h2 class="atitle nowrap">How the options stack up</h2><div class="body"><table class="tbl">
+        <thead><tr><th>Criteria</th><th>Option A</th><th class="colhi">Option B</th><th>Option C</th></tr></thead>
+        <tbody><tr><td>Setup time</td><td>2 weeks</td><td class="colhi cellhi">1 day</td><td>1 week</td></tr><tr><td>Price</td><td>$$$</td><td class="colhi cellhi">$</td><td>$$</td></tr><tr><td>Support</td><td>Email</td><td class="colhi cellhi">24/7</td><td>Business hrs</td></tr><tr><td>Integrations</td><td>5</td><td class="colhi cellhi">40+</td><td>12</td></tr></tbody>
+      </table></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">pricing-plan-cards</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Pricing</div><h2 class="atitle nowrap">Three simple plans</h2><div class="body"><div class="plans">
+        <div class="plan"><div class="pn">Starter</div><div class="pp">$0<small>/mo</small></div><ul class="ul"><li>1 seat</li><li>Core features</li><li>Community support</li></ul></div>
+        <div class="plan rec"><div class="rectag">Recommended</div><div class="pn">Team</div><div class="pp">$49<small>/mo</small></div><ul class="ul"><li>10 seats</li><li>Integrations</li><li>Priority support</li></ul></div>
+        <div class="plan"><div class="pn">Business</div><div class="pp">$149<small>/mo</small></div><ul class="ul"><li>50 seats</li><li>SSO &amp; controls</li><li>Dedicated manager</li></ul></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">pricing-comparison-table</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Pricing detail</div><h2 class="atitle nowrap">Plans &amp; what's included</h2><div class="body"><table class="tbl">
+        <thead><tr><th>Plan</th><th class="num">Price / mo</th><th class="num">Seats</th><th>Support</th></tr></thead>
+        <tbody><tr><td>Starter</td><td class="num">$0</td><td class="num">1</td><td>Community</td></tr><tr class="rec"><td class="cellhi">Team</td><td class="num cellhi">$49</td><td class="num">10</td><td>Priority</td></tr><tr><td>Business</td><td class="num">$149</td><td class="num">50</td><td>Dedicated</td></tr></tbody>
+      </table></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">status-progress-table</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Status · Week 12</div><h2 class="atitle nowrap">On track overall</h2><div class="body"><table class="tbl">
+        <thead><tr><th>Workstream</th><th>Owner</th><th>Due</th><th>Status</th></tr></thead>
+        <tbody><tr><td>Design system</td><td>Maya</td><td>Wk 10</td><td><span class="chip done">Done</span></td></tr><tr><td>Pattern library</td><td>Ken</td><td>Wk 14</td><td><span class="chip prog">In progress</span></td></tr><tr><td>Gallery site</td><td>Ren</td><td>Wk 15</td><td><span class="chip prog">In progress</span></td></tr><tr><td>Migration</td><td>Sora</td><td>Wk 13</td><td><span class="chip late">At risk</span></td></tr></tbody>
+      </table></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">risk-matrix-2x2</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Risk</div><h2 class="atitle nowrap">Impact vs. likelihood</h2><div class="body"><div class="rmatrix">
+        <div class="axisL">Impact</div>
+        <div class="cell hi"><div class="ct">High impact</div>Data breach</div>
+        <div class="cell"><div class="ct">High impact</div>Vendor outage</div>
+        <div class="cell"><div class="ct">Low impact</div>Minor bugs</div>
+        <div class="cell"><div class="ct">Low impact</div>Office move</div>
+        <div class="axisB">Likelihood →</div>
+      </div></div></div></div></div>
+    <div class="card"><div class="meta"><span class="pname">notebook-comparison-ledger</span><span class="tag read">Read</span></div>
+      <div class="slide nb-ledger"><div class="pad">
+        <div class="nb-top"><span class="lk kick">Three pilots, side by side</span><span class="mt"><span>North Field Office</span><span>Phase IV</span></span></div>
+        <h2>Where each pilot earns its keep</h2>
+        <p class="sub">Scored against the four levers that matter most this cycle. We only carry forward bets that win on at least two.</p>
+        <div class="tb">
+          <div class="c">Lever</div><div class="c">Rewrite welcome</div><div class="c">Quiet upgrades</div><div class="c">Inbox as search</div>
+          <div class="c">Time to impact</div><div class="c"><span class="pl yes">≤ 4 weeks</span></div><div class="c"><span class="pl part">6–8 weeks</span></div><div class="c"><span class="pl yes">≤ 4 weeks</span></div>
+          <div class="c">Build cost</div><div class="c"><span class="pl yes">low</span></div><div class="c"><span class="pl part">medium</span></div><div class="c"><span class="pl yes">low</span></div>
+          <div class="c">Retention lift</div><div class="c"><span class="pl yes">+19 pts D90</span></div><div class="c"><span class="pl part">+7 pts D90</span></div><div class="c"><span class="pl part">+5 pts D90</span></div>
+          <div class="c">Decision</div><div class="c"><span class="pl yes">Carry</span></div><div class="c"><span class="pl part">Hold</span></div><div class="c"><span class="pl yes">Carry</span></div>
+        </div>
+        <div class="nb-foot"><span>North Field Office</span><span>08 / 11</span></div>
+      </div></div></div>
+
+  </div>
+
+  <!-- ============ KPI / Summary ============ -->
+  <div class="group"><h2>🏆 KPI &amp; summary</h2><span class="cnt">7 patterns</span></div>
+  <div class="grid">
+    <div class="card"><div class="meta"><span class="pname">three-kpi-big-number</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Quarterly results</div><h2 class="atitle nowrap">Three numbers tell the quarter</h2><div class="body" style="margin:auto 0"><div class="kpirow">
+        <div><div class="v">+38%</div><div class="l">ARR growth</div><div class="d up">▲ 12 pts vs Q3</div></div>
+        <div><div class="v ink">1,240</div><div class="l">New accounts</div><div class="d up">▲ 9% QoQ</div></div>
+        <div><div class="v ink">4.6</div><div class="l">CSAT (of 5)</div><div class="d">— flat QoQ</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">goal-kgi-kpi-dashboard</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Goal tree</div><h2 class="atitle nowrap">From goal to action</h2><div class="body"><div class="glayers">
+        <div class="glayer top"><div class="gl-lab">Goal</div><div class="gl-bar">Become the category leader by 2028</div></div>
+        <div class="glayer"><div class="gl-lab">KGI</div><div class="gl-bar">Reach $50M ARR</div></div>
+        <div class="glayer"><div class="gl-lab">KPI</div><div class="gl-bar">+40% net revenue retention · 1,500 new accounts</div></div>
+        <div class="glayer"><div class="gl-lab">Actions</div><div class="gl-bar">Expansion playbook · partner channel · pricing revamp</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">summary-three-points</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="akick">In summary</div><h2 class="atitle nowrap">Three things to take away</h2><div class="body"><div class="sum2">
+        <div class="sline2"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12.5l5 5L20 6"/></svg><div><div class="st">One design file does the styling</div><div class="sc">Set color, type, and spacing once — every slide inherits it.</div></div></div>
+        <div class="sline2"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12.5l5 5L20 6"/></svg><div><div class="st">Patterns handle the layout</div><div class="sc">Pick by use case; the structure is already solved.</div></div></div>
+        <div class="sline2"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12.5l5 5L20 6"/></svg><div><div class="st">You build slide by slide</div><div class="sc">Paste into your AI, review, and refine.</div></div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">action-items-list</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">Next steps</div><h2 class="atitle nowrap">Action items</h2><div class="body"><div class="actions">
+        <div class="ahead"><div>#</div><div>Action</div><div>Owner</div><div>Due</div></div>
+        <div class="arow"><div class="an">1</div><div class="at">Finalize the design system</div><div class="ao">Maya</div><div class="ao">Apr 12</div></div>
+        <div class="arow"><div class="an">2</div><div class="at">Ship the pattern library</div><div class="ao">Ken</div><div class="ao">Apr 26</div></div>
+        <div class="arow"><div class="an">3</div><div class="at">Launch the gallery site</div><div class="ao">Ren</div><div class="ao">May 3</div></div>
+        <div class="arow"><div class="an">4</div><div class="at">Write the how-to guide</div><div class="ao">Sora</div><div class="ao">May 10</div></div>
+      </div></div></div></div></div>
+    <div class="card"><div class="meta"><span class="pname">editorial-big-figure</span><span class="tag present">Present</span></div>
+      <div class="slide ed-fig"><div class="pad">
+        <div class="toprow"><div><div class="kick">§ 04 — Headline figure</div><div class="sub2">A portrait, in numbers.</div></div><div class="sw"><i></i><i></i><i></i></div></div>
+        <div class="fig"><span>72</span><span class="unit">%</span></div>
+        <div class="ann"><div class="kick">What this measures</div><p>Share of customers who renewed without a discount. Survey of 842 accounts, weighted to region.</p></div>
+        <div class="bd"><div class="kick">Composition</div>
+          <div class="row"><span class="lbl">Enterprise</span><span class="bar"><i style="width:82%"></i></span><span class="val">82</span></div>
+          <div class="row"><span class="lbl">Mid-market</span><span class="bar"><i style="width:64%"></i></span><span class="val">64</span></div>
+          <div class="row"><span class="lbl">Small teams</span><span class="bar"><i style="width:48%"></i></span><span class="val">48</span></div>
+        </div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">masthead-kpi-grid-four</span><span class="tag read">Read</span></div>
+      <div class="slide mh-kpi"><div class="pad">
+        <div class="mast"><span class="kick">Headline indicators · Q3</span><span>Four numbers</span></div>
+        <div class="head"><h2 class="serif">By the<br>numbers.</h2><p class="sub">Indicators the team reviews each month. Variances are read against the plan agreed in March, not the prior year.</p></div>
+        <div class="g">
+          <div class="k"><div class="lb">Active accounts</div><div class="v">2,418</div><div class="d">+ 12.4%</div><div class="ds">Net new accounts across three operating regions.</div></div>
+          <div class="k inv"><div class="lb">Retention rate</div><div class="v">94<span class="u">%</span></div><div class="d">+ 3.1 pp</div><div class="ds">Trailing twelve-month retention, renewing cohort.</div></div>
+          <div class="k"><div class="lb">Cycle time</div><div class="v">11<span class="u">d</span></div><div class="d">− 2 days</div><div class="ds">Median intake to first delivery, weighted by volume.</div></div>
+          <div class="k inv"><div class="lb">Margin on revenue</div><div class="v">37<span class="u">%</span></div><div class="d">+ 1.8 pp</div><div class="ds">Contribution margin after direct costs.</div></div>
+        </div>
+      </div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">notebook-three-stats-pinned</span><span class="tag present">Present</span></div>
+      <div class="slide nb-stats"><div class="pad">
+        <div class="nb-top"><span class="lk kick">In numbers</span><span class="mt"><span>Phase III</span><span>Evidence</span></span></div>
+        <h2>The case, by the numbers</h2>
+        <div class="g">
+          <div class="st"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="big">2.4<small>×</small></div><h3>Retention multiple</h3><p>Written welcome + human reply, vs. templated control. Holds through D90.</p></div>
+          <div class="st alt"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="big">$4.1<small>M</small></div><h3>Projected retained ARR</h3><p>Modelled on this quarter's signup cohort, all other inputs held constant.</p></div>
+          <div class="st alt2"><svg class="pin" viewBox="0 0 60 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M52 9c0 4-3 6-6 6H12c-3 0-5-2-5-5s2-5 5-5h34c3 0 6 2 6 4z"/><circle cx="52" cy="9" r="4"/></svg><div class="big">72<small>hr</small></div><h3>The window that matters</h3><p>Behaviour in the first 72 hours predicts 18-month retention better than any feature metric.</p></div>
+        </div>
+        <div class="nb-foot"><span>North Field Office</span><span>09 / 11</span></div>
+      </div></div></div>
+
+  </div>
+
+  <!-- ============ Q&A / FAQ ============ -->
+  <div class="group"><h2>❓ FAQ</h2><span class="cnt">3 patterns</span></div>
+  <div class="grid">
+    <div class="card"><div class="meta"><span class="pname">faq-grid</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">FAQ</div><h2 class="atitle nowrap">Common questions</h2><div class="body"><div class="faqgrid">
+        <div class="faqcell"><div class="q">How long is setup?</div><div class="a">Most teams are live within a day.</div></div>
+        <div class="faqcell"><div class="q">Is my data secure?</div><div class="a">Encrypted in transit and at rest.</div></div>
+        <div class="faqcell"><div class="q">Can I cancel?</div><div class="a">Yes, anytime, no penalty.</div></div>
+        <div class="faqcell"><div class="q">Do you integrate?</div><div class="a">40+ tools out of the box.</div></div>
+        <div class="faqcell"><div class="q">What about support?</div><div class="a">24/7 on paid plans.</div></div>
+        <div class="faqcell"><div class="q">Is there a trial?</div><div class="a">14 days, no card needed.</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">faq-single-column</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">FAQ</div><h2 class="atitle nowrap">Top three questions</h2><div class="body"><div class="faqstack">
+        <div class="qa"><div class="q"><b>Q.</b> How quickly can we get started?</div><div class="a">Most teams complete setup in a single day with our guided flow and import tools.</div></div>
+        <div class="qa"><div class="q"><b>Q.</b> What happens to our data if we leave?</div><div class="a">You can export everything at any time; we delete it on request within 30 days.</div></div>
+        <div class="qa"><div class="q"><b>Q.</b> Do you offer onboarding help?</div><div class="a">Yes — every paid plan includes a kickoff call and priority support.</div></div>
+      </div></div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">faq-stacked-qa-boxes</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="akick">FAQ</div><h2 class="atitle nowrap">Questions, in boxes</h2><div class="body"><div class="faqstack boxed">
+        <div class="qa"><div class="q"><b>Q.</b> Is there a free trial?</div><div class="a">Yes — 14 days, no credit card required.</div></div>
+        <div class="qa"><div class="q"><b>Q.</b> Can I change plans later?</div><div class="a">Upgrade or downgrade anytime; changes prorate automatically.</div></div>
+        <div class="qa"><div class="q"><b>Q.</b> Who owns the content?</div><div class="a">You do. We never use your data to train anything.</div></div>
+      </div></div></div></div></div>
+  </div>
+
+
+
+  <!-- ============ Profiles ============ -->
+  <div class="group"><h2>👤 Profiles</h2><span class="cnt">4 patterns</span></div>
+  <div class="grid">
+
+    <div class="card"><div class="meta"><span class="pname">profile-career-features</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="pcf">
+        <div class="pcol"><div class="ph"></div><div class="nm">Acme Inc.</div><div class="role">Sales Division 2</div><div class="age">Daniel Brooks · 32</div></div>
+        <div class="rcol">
+          <div class="sect"><div class="sl">Career</div><div class="ctl"><div class="ci"><b>2017</b>Joined Acme Inc. (new grad)</div><div class="ci"><b>2019</b>Corporate sales, marketing support</div><div class="ci"><b>2023</b>Leads DX-product proposals</div></div></div>
+          <div class="motto"><b>"Enable, don't just sell"</b> — building long-term customer success.<br><b>★ Top performer, FY2023</b> · President's Club</div>
+          <div class="sect"><div class="sl">Highlights</div><div class="feats"><div class="feat"><div class="fv">20+</div><div class="fl">custom proposals / mo</div></div><div class="feat"><div class="fv">57%</div><div class="fl">meeting rate</div></div><div class="feat"><div class="fv">85%</div><div class="fl">retention</div></div></div></div>
+        </div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">profile-vertical-timeline</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad"><div class="pvt">
+        <div class="pcol"><div class="ph"></div><div class="role2">Sales Dept. · Manager</div><div class="n">James Carter</div><div class="r">@jcarter</div><div class="meta2">1985 · age 39</div><div class="meta2">BA in Design, Pelican University</div></div>
+        <div class="tl"><div class="rail"></div>
+          <div class="ev"><div class="dot"></div><div><div class="eh"><b>2009</b> Joined — Sales Dept. 2</div><div class="es">Account sales to small and mid-size retailers (clients A, B, C).</div></div></div>
+          <div class="ev"><div class="dot"></div><div><div class="eh"><b>2013</b> Sales Dept. 1</div><div class="es">Account sales to major telecom firms (clients D, E, F).</div></div></div>
+          <div class="ev"><div class="dot"></div><div><div class="eh"><b>2015</b> HR Department</div><div class="es">Led the recruiting team, focused on new-graduate hiring.</div></div></div>
+          <div class="ev"><div class="dot"></div><div><div class="eh"><b>2020</b> Sales Enablement</div><div class="es">As manager, ran planning, process improvement, and inside sales.</div></div></div>
+          <div class="ev"><div class="dot"></div><div><div class="eh"><b>2023</b> Sales Dept. 1 · Manager</div><div class="es">Account sales across the services industry (clients G, H, I).</div></div></div>
+        </div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">profile-card-sections</span><span class="tag read">Read</span></div>
+      <div class="slide"><div class="pad" style="padding:0"><div class="pcs">
+        <div class="panel"><div class="circ"></div><div class="n">Emma Wilson</div><div class="r">Marketing Dept.</div><div class="em">emma@example.com</div></div>
+        <div class="pbody" style="padding-right:6cqi">
+          <div class="row"><b>Dept / Role</b>Sales · Team member</div>
+          <div class="row"><b>Joined</b>20XX</div>
+          <div class="row"><b>Work</b>Account management</div>
+          <div class="sh">About me</div>
+          <div class="row"><b>Hobby</b>Photography</div>
+          <div class="row"><b>Likes</b>Coffee &amp; travel</div>
+          <div class="sh">One line</div>
+          <div class="one">I value planning and clear communication, and I recharge with my hobbies on weekends. Looking forward to working with you.</div>
+        </div>
+      </div></div></div></div>
+
+    <div class="card"><div class="meta"><span class="pname">profile-info-table</span><span class="tag present">Present</span></div>
+      <div class="slide"><div class="pad"><div class="pit">
+        <div class="lft"><div class="ph"></div><div class="role">CEO &amp; Founder</div><div class="n">Michelle Tan</div><div class="ne">Michelle Tan</div><div class="bio">Building products people love, with a focus on clarity and craft — fifteen years across product and sales.</div></div>
+        <div class="rgt">
+          <div class="skrow">
+            <div><div class="sh3">Skills</div>
+              <div class="skill"><span class="sl">Strategy</span><span class="bar"><i style="width:90%"></i></span></div>
+              <div class="skill"><span class="sl">Product</span><span class="bar"><i style="width:78%"></i></span></div>
+              <div class="skill"><span class="sl">Sales</span><span class="bar"><i style="width:64%"></i></span></div>
+              <div class="skill"><span class="sl">Design</span><span class="bar"><i style="width:82%"></i></span></div>
+            </div>
+            <div><div class="sh3">Languages</div>
+              <div class="lang"><span class="ll">English</span><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg></span></div>
+              <div class="lang"><span class="ll">French</span><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg></span></div>
+              <div class="lang"><span class="ll">Spanish</span><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg><svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 6.2 6.5.5-5 4.2 1.6 6.4L12 16.9 5.4 20.3 7 13.9l-5-4.2 6.5-.5z"/></svg></span></div>
+            </div>
+          </div>
+          <div class="career"><div class="sh3">Career</div>
+            <div class="cyears"><span>2008</span><span>2012</span><span>2016</span><span>2020</span><span>2024</span></div>
+            <div class="ctl"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd last"></span></div>
+            <div class="clogos"><div>Logo</div><div>Logo</div><div>Logo</div><div>Logo</div><div>Logo</div></div>
+          </div>
+        </div>
+      </div></div></div></div>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--line);margin-top:8px;padding:24px 0 8px;color:var(--body);font-size:13.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><span>100 grayscale layout patterns — color comes from your own design system.</span><span><a href="index.html" style="color:var(--body);text-decoration:none">Home</a> · <a href="how-to-use.html" style="color:var(--body);text-decoration:none">How to use</a></span></footer>
+</div>
+
+  <div class="pov" id="pov" role="dialog" aria-modal="true">
+    <div class="pmodal">
+      <button class="px" id="pov-x" aria-label="Close">×</button>
+      <div><span class="mname" id="pov-name">pattern</span><span class="uc" id="pov-uc">Hybrid</span></div>
+      <p class="ucline" id="pov-ucline"></p>
+      <div class="prev" id="pov-prev"></div>
+      <h4>Build this slide</h4>
+      <div style="position:relative"><button class="px2" id="pov-copy">Copy</button><pre id="pov-pre"></pre></div>
+      <p class="precipe"><button class="reca" id="pov-reccopy">Copy recipe</button><a class="reca dl" id="pov-recdl" download>Download</a><a class="reca open" id="pov-link" target="_blank" rel="noopener">Open (.md) →</a></p>
+      <div class="ptip">Two things go to the AI: your <b>slide_template.md</b> and this <b>recipe</b>. <b>Copy recipe</b> drops it into the chat; <b>Download</b> saves the <code>.md</code> to upload into a Project / Gem. Then paste the prompt above and replace <code>&lt;language&gt;</code> with your language.</div>
+    </div>
+  </div>
+
+<script src="assets/patterns.js" defer></script>
+</body>
+</html>
